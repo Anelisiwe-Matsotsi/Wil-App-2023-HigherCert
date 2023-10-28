@@ -13,6 +13,7 @@
         android:theme="@style/Theme.POEEmpoweringTheNationApp"
         tools:targetApi="31">
         <activity
+<<<<<<< HEAD
             android:name=".ContactUs"
             android:exported="false" />
         <activity
@@ -40,6 +41,8 @@
             android:name=".Home"
             android:exported="false" />
         <activity
+=======
+>>>>>>> parent of d76242b (added)
             android:name=".ChildMinding"
             android:exported="false" />
         <activity
