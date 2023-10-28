@@ -29,6 +29,7 @@
             android:name=".Cooking"
             android:exported="false" />
         <activity
+<<<<<<< HEAD
             android:name=".ContactUs"
             android:exported="false" />
         <activity
@@ -54,6 +55,9 @@
             android:exported="false" />
         <activity
             android:name=".Home"
+            android:exported="false" />
+        <activity
+            android:name=".ChildMinding"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
