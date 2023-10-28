@@ -1,20 +1,302 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView2"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="#97E4E9"
+    android:fillViewport="true"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="1.0">
 
-    <TextView
-        android:layout_width="wrap_content"
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.164"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.275" />
+        android:background="#97e4e9"
+        tools:context=".ChildMinding"
+        tools:layout_editor_absoluteX="-68dp"
+        tools:layout_editor_absoluteY="-72dp">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <FrameLayout
+            android:id="@+id/frameLayoutLogo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="199dp"
+                app:srcCompat="@drawable/thumbnail_img_7280" />
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/textViewHeading2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Child Minding"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.132" />
+
+        <FrameLayout
+            android:id="@+id/frameLayoutInfo"
+            android:layout_width="543dp"
+            android:layout_height="718dp"
+            android:background="#E29E0B"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.521"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.272">
+
+            <TextView
+                android:id="@+id/textViewInfo2"
+                android:layout_width="439dp"
+                android:layout_height="599dp"
+                android:layout_gravity="center"
+                tools:text="Welcome to our comprehensive &quot;Child Minding&quot; course, designed to equip you with the essential knowledge and skills for providing expert care to infants and children. Whether you're a parent, caregiver, or simply interested in childcare, this course is your gateway to understanding the unique needs of young children and ensuring their well-being and development. Our course covers a wide range of topics, including:  Newborn Care (0-6 Months): Learn how to care for infants from the moment they are born until they reach six months of age. Our experienced instructors will guide you through feeding, diapering, soothing techniques, and ensuring the safety and comfort of your little ones. Toddler Needs: Discover what toddlers need during their crucial developmental stages. From nutrition and playtime to potty training and social interactions, we provide valuable insights to help you nurture and support the growth of toddlers. Educational Toys: Explore the world of educational toys and how they can contribute to a child's cognitive, motor, and emotional development. We'll introduce you to a variety of age-appropriate toys and guide you on selecting the best options for different age groups. Our sessions are held with your convenience in mind, running from 9:00 am to 11:00 am every Monday, Wednesday, and Friday. Our passionate and knowledgeable instructors are dedicated to sharing their expertise and practical advice to ensure that you can provide the best possible care for children. Whether you're a new parent seeking guidance or a caregiver looking to enhance your childcare skills, our &quot;Child Minding&quot; course offers a supportive and educational environment to help you become a confident and capable caregiver. Join us on this journey to create a safe, nurturing, and educational environment for the children in your care. Enroll today and make a positive impact on the lives of the little ones you cherish. Fees: R750" />
+
+            <ImageView
+                android:id="@+id/imageViewBaby"
+                android:layout_width="132dp"
+                android:layout_height="133dp"
+                android:layout_gravity="bottom"
+                app:srcCompat="@drawable/baby" />
+
+            <ImageView
+                android:id="@+id/imageViewChildMinding"
+                android:layout_width="135dp"
+                android:layout_height="133dp"
+                android:layout_gravity="bottom|center"
+                app:srcCompat="@drawable/child_minding_2" />
+
+            <ImageView
+                android:id="@+id/imageViewChildren"
+                android:layout_width="133dp"
+                android:layout_height="133dp"
+                android:layout_gravity="bottom|right"
+                app:srcCompat="@drawable/children" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/frameLayoutInstructorsBackground"
+            android:layout_width="619dp"
+            android:layout_height="540dp"
+            android:background="#E29E0B"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.487"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/frameLayoutLogo"
+            app:layout_constraintVertical_bias="0.777">
+
+            <FrameLayout
+                android:id="@+id/frameLayoutInstructors2"
+                android:layout_width="567dp"
+                android:layout_height="508dp"
+                android:layout_gravity="center"
+                android:background="#2BA03D">
+
+
+                <FrameLayout
+                    android:id="@+id/frameLayoutKumar"
+                    android:layout_width="164dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left">
+
+
+                    <ImageView
+                        android:id="@+id/imageViewKumar"
+                        android:layout_width="124dp"
+                        android:layout_height="85dp"
+                        android:layout_gravity="top|center"
+                        app:srcCompat="@drawable/jaya_kumar_cm1_" />
+
+                    <TextView
+                        android:id="@+id/textViewKumar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="254dp"
+                        android:layout_gravity="center"
+                        android:text="Dr. Jaya Kumar"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textViewKumarInfo"
+                        android:layout_width="143dp"
+                        android:layout_height="354dp"
+                        android:layout_gravity="bottom|center"
+                        android:text='Dr. Jaya Kumar is a highly experienced pediatric nurse with over 15 years of expertise in caring for infants and children. She holds a Ph.D. in Child Development, making her exceptionally knowledgeable about child behavior, emotional development, and the unique needs of different age groups. Dr. Kumar is dedicated to teaching parents and caregivers the essential skills required to provide expert care to young children. Her passion for child well-being and her compassionate approach to teaching make her an invaluable asset to our "Child Minding" course.'
+                        android:textSize="12sp" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/frameLayoutSarah"
+                    android:layout_width="166dp"
+                    android:layout_height="475dp"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:id="@+id/imageViewSarah"
+                        android:layout_width="147dp"
+                        android:layout_height="86dp"
+                        android:layout_gravity="top|center"
+                        app:srcCompat="@drawable/sarah_thompson_cm2_" />
+
+                    <TextView
+                        android:id="@+id/textViewSarah"
+                        android:layout_width="wrap_content"
+                        android:layout_height="263dp"
+                        android:layout_gravity="center"
+                        android:text="Sarah Thompson"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textViewSarahInfo"
+                        android:layout_width="129dp"
+                        android:layout_height="337dp"
+                        android:layout_gravity="bottom|center"
+                        android:text="Sarah Thompson is a certified Early Childhood Educator with a specialization in child behavior. With a background in child psychology, she brings a wealth of knowledge in understanding and guiding children through their crucial developmental stages. Sarah is not only an exceptional teacher but also a mother, giving her a unique perspective that resonates with both parents and caregivers. Her insights on creating nurturing environments for children are invaluable, and she is dedicated to helping course participants develop the skills needed to foster a child's physical, emotional, and intellectual growth."
+                        android:textSize="12sp" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/frameLayoutMark"
+                    android:layout_width="163dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right">
+
+                    <ImageView
+                        android:id="@+id/imageViewMark"
+                        android:layout_width="127dp"
+                        android:layout_height="85dp"
+                        android:layout_gravity="top|center"
+                        app:srcCompat="@drawable/mark_johnson_cm3_" />
+
+                    <TextView
+                        android:id="@+id/textViewMark"
+                        android:layout_width="wrap_content"
+                        android:layout_height="271dp"
+                        android:layout_gravity="center"
+                        android:text="Mark Johnson"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textViewMarkInfo"
+                        android:layout_width="match_parent"
+                        android:layout_height="350dp"
+                        android:layout_gravity="bottom|center"
+                        android:text="Mark Johnson is a child safety and nutrition expert with extensive experience in childproofing homes and providing guidance on nutrition for children of all ages. As a parent himself, he understands the importance of ensuring a safe and healthy environment for young ones. Mark's practical approach to child safety and nutrition is a cornerstone of our &quot;Child Minding&quot; course. He equips participants with the knowledge and tools needed to create a secure and nourishing space for children, promoting their overall well-being and development."
+                        android:textSize="12sp" />
+                </FrameLayout>
+            </FrameLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/frameLayoutTestimomials2"
+            android:layout_width="608dp"
+            android:layout_height="258dp"
+            android:background="#E29E0B"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.974">
+
+            <FrameLayout
+                android:id="@+id/frameLayoutMaria"
+                android:layout_width="146dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="left">
+
+                <TextView
+                    android:id="@+id/textViewMaria"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center"
+                    android:text="-Maria A."
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewMariaTestimony"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text='"As a new parent, I was overwhelmed with the responsibilities of caring for my infant. This course was a game-changer for me. I learned essential skills, from diapering to soothing techniques, and now I feel confident in providing the best care for my little one. Highly recommend!"'
+                    android:textSize="13sp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/frameLayoutSusan"
+                android:layout_width="167dp"
+                android:layout_height="235dp"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:id="@+id/textViewSusan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center"
+                    android:text="-Susan D."
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewSusanTestimony"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="&quot;The 'Child Minding' course was a fantastic resource for me as a caregiver. It provided in-depth insights into the needs of toddlers, which helped me create a nurturing environment for the children I look after. The practical advice from experienced instructors was invaluable.&quot;" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/frameLayoutThami"
+                android:layout_width="161dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="right">
+
+                <TextView
+                    android:id="@+id/textViewThami"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center"
+                    android:text="-Thami N."
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewThamiTestimony"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="&quot;I joined this course to enhance my knowledge of child development and educational toys. It exceeded my expectations! I now understand the importance of age-appropriate toys and how they contribute to a child's growth. This course has been a great investment in my childcare skills.&quot;" />
+            </FrameLayout>
+        </FrameLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>
