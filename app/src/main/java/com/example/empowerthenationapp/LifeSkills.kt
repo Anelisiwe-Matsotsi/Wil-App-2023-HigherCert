@@ -1,0 +1,53 @@
+package com.example.empowerthenationapp
+
+import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+import android.util.Log
+import androidx.fragment.app.Fragment
+import com.google.android.material.bottomnavigation.BottomNavigationView
+
+class LifeSkills : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_life_skills)
+
+        val bottomNav = findViewById<BottomNavigationView>(R.id.bottomNav)
+
+        bottomNav.setOnItemSelectedListener {
+            when (it.itemId) {
+                R.id.home -> {
+                    loadFragment(HomeFragment())
+                    true
+                }
+
+                R.id.message -> {
+                    loadFragment(SixWeekCoursesFragment())
+                    true
+                }
+
+                R.id.settings -> {
+                    loadFragment(SixMonthCoursesFragment())
+                    true
+                }
+
+                R.id.checkout -> {
+                    loadFragment(CheckoutFragment())
+                    true
+                }
+
+                else -> {
+                    Log.e("MainActivity", "Invalid menu item selected: ${it.itemId}")
+                    false
+                }
+            }
+
+        }
+
+    }
+    private  fun loadFragment(fragment: Fragment){
+        val transaction = supportFragmentManager.beginTransaction()
+        transaction.replace(R.id.container,fragment)
+        transaction.commit()
+    }
+
+}

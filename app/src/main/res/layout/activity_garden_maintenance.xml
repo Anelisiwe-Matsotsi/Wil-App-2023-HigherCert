@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/scrollView"
+    android:id="@+id/scrollView2"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#97E4E9"
@@ -14,296 +13,39 @@
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintTop_toTopOf="parent"
     app:layout_constraintVertical_bias="1.0">
-
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#97e4e9"
-        tools:context=".GardenMaintenance"
-        tools:layout_editor_absoluteX="-68dp"
-        tools:layout_editor_absoluteY="-72dp">
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        tools:context=".GardenMaintenance">
 
         <FrameLayout
-            android:id="@+id/frameLayoutLogo"
+            android:id="@+id/container"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#FFFFFF"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0">
+            android:layout_height="match_parent"
+            android:layout_above="@id/bottomNav"
+            android:background="#97e4e9">
 
-            <ImageView
-                android:id="@+id/imageViewLogo2"
-                android:layout_width="match_parent"
-                android:layout_height="199dp"
-                app:srcCompat="@drawable/thumbnail_img_7280" />
+
+
 
         </FrameLayout>
 
-        <TextView
-            android:id="@+id/textViewHeading"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Garden Maintenance"
-            android:textSize="24sp"
-            android:textStyle="bold"
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNav"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:background="#FF9800"
+            android:scrollIndicators="left"
+            app:itemTextColor="#0C0B0B"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.132" />
-
-        <FrameLayout
-            android:id="@+id/frameLayoutInfo"
-            android:layout_width="448dp"
-            android:layout_height="650dp"
-            android:background="#E29E0B"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.521"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.272">
-
-            <TextView
-                android:id="@+id/textViewInfo3"
-                android:layout_width="404dp"
-                android:layout_height="599dp"
-                android:layout_gravity="center"
-                android:text="This course's purpose is to provide essential information on watering, pruning, and planting in a domestic garden (IIE, 2023). Participants will gain valuable insights into managing their garden, including optimizing water usage, understanding the watering needs of both indigenous and exotic plants, effective trimming techniques, and methods for propagating plants. Whether you're a seasoned gardener or just starting out, this course offers valuable knowledge for all enthusiasts. Join us for informative sessions covering a wide range of garden maintenance topics:  Watering Techniques: Learn how to efficiently water your garden to promote healthy plant growth while conserving water resources. Discover the unique watering requirements of different plant varieties. Pruning Strategies: Master the art of pruning to maintain the shape and health of your plants. Our experts will guide you through the pruning process for various plant types. Propagation Methods: Explore the fascinating world of plant propagation. From seeds to cuttings, you'll gain insights into multiplying your favorite plants and expanding your garden. Planting Diversity: Diversify your garden with an array of plants. We'll provide guidance on planting techniques for different types of plants, helping you create a vibrant and thriving garden space. Sessions are held every week, starting at 11:30 am and concluding at 1:00 pm on Monday, Tuesday, and Thursday. Our experienced instructors will walk you through each topic, offering practical tips and hands-on demonstrations. Whether you have a green thumb or are just getting started with gardening, our Garden Maintenance course will empower you with the knowledge and skills needed to create and maintain a beautiful and flourishing garden. Enroll today and embark on your journey to becoming a confident and successful gardener! Fees: R750"
-                android:textColor="#090909"/>
-
-
-            <ImageView
-                android:id="@+id/imageViewBaby"
-                android:layout_width="132dp"
-                android:layout_height="133dp"
-                android:layout_gravity="bottom"
-                app:srcCompat="@drawable/img_7277" />
-
-            <ImageView
-                android:id="@+id/imageViewChildMinding"
-                android:layout_width="135dp"
-                android:layout_height="133dp"
-                android:layout_gravity="bottom|center"
-                app:srcCompat="@drawable/garden" />
-
-            <ImageView
-                android:id="@+id/imageViewChildren"
-                android:layout_width="133dp"
-                android:layout_height="133dp"
-                android:layout_gravity="bottom|right"
-                app:srcCompat="@drawable/gardenmaintenance" />
-
-        </FrameLayout>
-
-        <FrameLayout
-            android:id="@+id/frameLayoutInstructorsBackground"
-            android:layout_width="607dp"
-            android:layout_height="534dp"
-            android:background="#E29E0B"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.487"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/frameLayoutLogo"
-            app:layout_constraintVertical_bias="0.777">
-
-            <FrameLayout
-                android:id="@+id/frameLayoutInstructors"
-                android:layout_width="533dp"
-                android:layout_height="485dp"
-                android:layout_gravity="center"
-                android:background="#2BA03D">
-
-
-                <FrameLayout
-                    android:id="@+id/frameLayoutThabiso"
-                    android:layout_width="164dp"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="left">
-
-
-                    <ImageView
-                        android:id="@+id/imageViewThabiso"
-                        android:layout_width="124dp"
-                        android:layout_height="85dp"
-                        android:layout_gravity="top|center"
-                        app:srcCompat="@drawable/thabiso_modise_g1_" />
-
-                    <TextView
-                        android:id="@+id/textViewThabiso"
-                        android:layout_width="wrap_content"
-                        android:layout_height="254dp"
-                        android:layout_gravity="center"
-                        android:text="Thabiso Modise"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:id="@+id/textViewThabisoInfo"
-                        android:layout_width="120dp"
-                        android:layout_height="347dp"
-                        android:layout_gravity="bottom|center"
-                        android:text="Thabiso specialises in Watering Techniques and with over 12 years of experience as a horticulturist, Thabiso is passionate about efficient watering practices. He has worked on various conservation projects and is known for his expertise in promoting healthy plant growth while conserving water resources."
-                        android:textColor="#090909"
-                        android:textSize="14sp" />
-                </FrameLayout>
-
-                <FrameLayout
-                    android:id="@+id/frameLayoutDavid"
-                    android:layout_width="166dp"
-                    android:layout_height="475dp"
-                    android:layout_gravity="center">
-
-                    <ImageView
-                        android:id="@+id/imageViewDavid"
-                        android:layout_width="141dp"
-                        android:layout_height="86dp"
-                        android:layout_gravity="top|center"
-                        app:srcCompat="@drawable/david_smalls_g2_" />
-
-                    <TextView
-                        android:id="@+id/textViewDavid"
-                        android:layout_width="wrap_content"
-                        android:layout_height="263dp"
-                        android:layout_gravity="center"
-                        android:text="David Smalls"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:id="@+id/textViewDavidInfo"
-                        android:layout_width="129dp"
-                        android:layout_height="337dp"
-                        android:layout_gravity="bottom|center"
-                        android:text="David has been a professional gardener for more than two decades. His skill in the art of pruning has transformed countless gardens. He will teach you the secrets of maintaining the shape and health of your plants through proper pruning."
-                        android:textColor="#090909"
-                        android:textSize="16sp" />
-                </FrameLayout>
-
-                <FrameLayout
-                    android:id="@+id/frameLayoutEmma"
-                    android:layout_width="163dp"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="right">
-
-                    <ImageView
-                        android:id="@+id/imageViewEmma"
-                        android:layout_width="127dp"
-                        android:layout_height="85dp"
-                        android:layout_gravity="top|center"
-                        app:srcCompat="@drawable/emma_hampton_g3_" />
-
-                    <TextView
-                        android:id="@+id/textViewEmma"
-                        android:layout_width="wrap_content"
-                        android:layout_height="271dp"
-                        android:layout_gravity="center"
-                        android:text="Emma Hampton"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:id="@+id/textViewEmmaInfo"
-                        android:layout_width="match_parent"
-                        android:layout_height="350dp"
-                        android:layout_gravity="bottom|center"
-                        android:text="Emma is a botanist and has extensive knowledge of plant propagation. She has conducted research on plant genetics and propagation techniques. Join her to explore the fascinating world of multiplying your favorite plants. She also has a diverse background in landscaping and has created stunning gardens with a wide variety of plant species. She will guide you through planting techniques for different types of plants to create a vibrant and thriving garden space."
-                        android:textColor="#090909"
-                        android:textSize="14sp" />
-                </FrameLayout>
-            </FrameLayout>
-        </FrameLayout>
-
-        <FrameLayout
-            android:id="@+id/frameLayoutTestimonies"
-            android:layout_width="573dp"
-            android:layout_height="231dp"
-            android:background="#E29E0B"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.496"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.974">
-
-            <FrameLayout
-                android:id="@+id/frameLayoutLisa"
-                android:layout_width="146dp"
-                android:layout_height="match_parent"
-                android:layout_gravity="left">
-
-                <TextView
-                    android:id="@+id/textViewLisa"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="bottom|center"
-                    android:text="-Lisa Q."
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/textViewLisaTestimony"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:textColor="#090909"
-                    android:text="&quot;I was a novice gardener before taking this course, but now I feel confident in my garden maintenance skills. The instructors provided clear guidance and practical tips. I especially loved Emma's lessons on propagation. Highly recommended!&quot;" />
-            </FrameLayout>
-
-            <FrameLayout
-                android:id="@+id/frameLayoutKhosi"
-                android:layout_width="167dp"
-                android:layout_height="235dp"
-                android:layout_gravity="center">
-
-                <TextView
-                    android:id="@+id/textViewKhosi"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="bottom|center"
-                    android:text="-Khosi S."
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/textViewKhosiTestimony"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:textColor="#090909"
-                    android:text="&quot;I've been gardening for years, and I thought I knew it all, but Thabiso's lessons on efficient watering techniques completely changed the game. I now use less water and see better results whenever I garden. This course is a must for all garden enthusiasts.&quot;" />
-            </FrameLayout>
-
-            <FrameLayout
-                android:id="@+id/frameLayoutThemba"
-                android:layout_width="161dp"
-                android:layout_height="match_parent"
-                android:layout_gravity="right">
-
-                <TextView
-                    android:id="@+id/textViewThemba"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="bottom|center"
-                    android:text="-Themba G."
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/textViewThembaTestimony"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="#090909"
-                    android:text="&quot;The Garden Maintenance course offers a comprehensive overview of everything you need to know to maintain a beautiful garden. The instructors are knowledgeable, and the hands-on demonstrations are incredibly helpful. I've already seen a significant improvement in my gardening skills.&quot;" />
-            </FrameLayout>
-        </FrameLayout>
-
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
+            app:menu="@menu/nav_menu" />
+    </RelativeLayout>
 
 </ScrollView>

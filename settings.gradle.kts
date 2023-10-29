@@ -13,6 +13,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "POE Empowering The Nation App"
+rootProject.name = "EmpowerTheNationApp"
 include(":app")
  

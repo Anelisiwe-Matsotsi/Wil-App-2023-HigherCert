@@ -10,37 +10,8 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.POEEmpoweringTheNationApp"
+        android:theme="@style/Theme.AppCompat"
         tools:targetApi="31">
-        <activity
-            android:name=".GardenMaintenance"
-            android:exported="false"
-            android:label="@string/title_activity_garden_maintenance"
-            android:theme="@style/Theme.POEEmpoweringTheNationApp" />
-        <activity
-            android:name=".GardenMaintanance"
-            android:exported="false"
-            android:label="@string/title_activity_garden_maintanance"
-            android:theme="@style/Theme.POEEmpoweringTheNationApp" />
-        <activity
-            android:name=".ChildMinding"
-            android:exported="false" />
-        <activity
-            android:name=".Cooking"
-            android:exported="false" />
-        <activity
-<<<<<<< HEAD
-            android:name=".ContactUs"
-            android:exported="false" />
-        <activity
-            android:name=".CheckOut"
-            android:exported="false" />
-        <activity
-            android:name=".SixWeekCourses"
-            android:exported="false" />
-        <activity
-            android:name=".Sewing"
-            android:exported="false" />
         <activity
             android:name=".LifeSkills"
             android:exported="false" />
@@ -48,13 +19,16 @@
             android:name=".Landscaping"
             android:exported="false" />
         <activity
+            android:name=".Sewing"
+            android:exported="false" />
+        <activity
             android:name=".FirstAid"
             android:exported="false" />
         <activity
-            android:name=".SixMonthCourses"
+            android:name=".GardenMaintenance"
             android:exported="false" />
         <activity
-            android:name=".Home"
+            android:name=".Cooking"
             android:exported="false" />
         <activity
             android:name=".ChildMinding"

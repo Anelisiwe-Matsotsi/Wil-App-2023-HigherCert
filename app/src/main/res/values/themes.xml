@@ -5,5 +5,5 @@
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
 
-    <style name="Theme.POEEmpoweringTheNationApp" parent="Base.Theme.POEEmpoweringTheNationApp" />
+    <style name="Theme.EmpowerTheNationApp" parent="Base.Theme.EmpowerTheNationApp" />
 </resources>
