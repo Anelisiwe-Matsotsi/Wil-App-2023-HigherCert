@@ -23,9 +23,62 @@
             android:id="@+id/container"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_above="@id/bottomNav"
             android:background="#97e4e9">
 
+
+            <TextView
+                android:id="@+id/textViewHeadingFA"
+                android:layout_width="match_parent"
+                android:layout_height="77dp"
+                android:layout_marginTop="200dp"
+                android:background="@color/white"
+                android:text="Landscaping"
+                android:textAlignment="center"
+                android:textColor="#050505"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewDisplay"
+                android:layout_width="345dp"
+                android:layout_height="548dp"
+                android:layout_marginLeft="36dp"
+                android:layout_marginTop="300dp"
+                android:text="We believe the world's biggest issue is hunger. It literally impacts everything. Until now, the
+    knowledge and training of nutrient-dense diet has seemed out of reach for many. But with Empowering
+    The Nation, anyone can grow health. The Empowering the Nation is an Instituiton that trains and empowers
+    people. Empowering the Nation offers landscaping, the upliftment of landscapers and entry-level garderners.
+    At Empowering The Nation our aim is to nourish, develop and provide stimulating education in all aspects of
+    landscaping no matter the experience of you nor your company. We offer in-depth and informative training
+    courses for all fields throughout the landscaping industry through a merged classroom based and practical
+    experience, tailoring training to suit your learning desires. We guarantee our courses will always overreach
+    expectations by offering you with the latest recommendations and training, and going beyond and above the
+    industry guidelines.
+
+    The requirements of this course is only grade 12.Empowering the Nation seeks unskilled people and garden
+    enthusiasts. The duration of this course is 6 months at the cost of a once of payment of R1500. However,
+    should you need a payment arrangement you will visit the financial office"
+                android:textColor="#070707" />
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="match_parent"
+                android:layout_height="169dp"
+                android:background="@color/white"
+                app:srcCompat="@drawable/thumbnail_img_7280" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="750dp"
+                app:srcCompat="@drawable/landscaping1" />
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="750dp"
+                app:srcCompat="@drawable/landscaping2" />
 
 
         </FrameLayout>

@@ -16,9 +16,10 @@
             android:id="@+id/button5"
             android:layout_width="303dp"
             android:layout_height="101dp"
-            android:layout_marginLeft="70dp"
-            android:layout_marginTop="750dp"
-            android:background="#4DFFFFFF"
+            android:layout_marginRight="59dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="850dp"
+            android:background="@drawable/garden"
             android:text="Garden Maintenance"
             android:textColor="#090909"
             android:textSize="24sp" />
@@ -27,20 +28,21 @@
             android:id="@+id/button4"
             android:layout_width="303dp"
             android:layout_height="101dp"
-            android:layout_marginLeft="70dp"
+            android:layout_marginLeft="60dp"
             android:layout_marginTop="450dp"
-            android:background="#4DFFFFFF"
-            android:text="Child Minding"
+            android:background="@drawable/child_minding_1"
             android:textColor="#090909"
             android:textSize="24sp" />
 
         <TextView
             android:id="@+id/textView"
-            android:layout_width="321dp"
-            android:layout_height="73dp"
-            android:layout_marginLeft="80dp"
+            android:layout_width="335dp"
+            android:layout_height="77dp"
+            android:layout_marginLeft="60dp"
             android:layout_marginTop="250dp"
+            android:background="@color/white"
             android:text="Six Week Courses"
+            android:textColor="#050505"
             android:textSize="34sp"
             android:textStyle="bold" />
 
@@ -48,14 +50,42 @@
             android:id="@+id/button3"
             android:layout_width="303dp"
             android:layout_height="101dp"
-            android:layout_marginLeft="70dp"
+            android:layout_marginLeft="60dp"
             android:layout_marginTop="600dp"
-            android:background="#4DFFFFFF"
+            android:background="@drawable/cooking"
             android:text="Cooking"
             android:textColor="#090909"
             android:textSize="24sp" />
 
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="match_parent"
+            android:layout_height="165dp"
+            android:background="@color/white"
+            app:srcCompat="@drawable/thumbnail_img_7280" />
 
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="321dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="350dp"
+            android:background="#FF9800"
+            android:text="Empowering the nation is a business that was established in 2018 in hopes to empower domeatic workers as           well as gardners all over Johannesburg with skills that can help them improve their wages.People are trained          on both six-month long Learnerships and six-week long Short Skills Training"
+            android:textColor="#0E0E0E"
+            android:textSize="14sp" />
+
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="321dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="750dp"
+            android:background="#4CAF50"
+            android:text="Empowering the nation is a business that was established in 2018 in hopes to empower domeatic workers as           well as gardners all over Johannesburg with skills that can help them improve their wages.People are trained          on both six-month long Learnerships and six-week long Short Skills Training"
+            android:textColor="#0E0E0E"
+            android:textSize="14sp" />
 
     </FrameLayout>
 </ScrollView>

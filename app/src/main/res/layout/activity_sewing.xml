@@ -23,10 +23,52 @@
             android:id="@+id/container"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_above="@id/bottomNav"
             android:background="#97e4e9">
 
 
+            <TextView
+                android:id="@+id/textViewHeadingFA"
+                android:layout_width="match_parent"
+                android:layout_height="77dp"
+                android:layout_marginTop="200dp"
+                android:background="@color/white"
+                android:text="Sewing"
+                android:textAlignment="center"
+                android:textColor="#050505"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewDisplay"
+                android:layout_width="345dp"
+                android:layout_height="548dp"
+                android:layout_marginLeft="36dp"
+                android:layout_marginTop="300dp"
+                android:text="This course includes professional guidance from fashion designers and it will focus on deepening and
+   refreshing your skils on the sewing machine. You will learn the basics of fabric(cutting) and working
+   with sewing patterns. It will also focus more on additional sewing techniques patterns. The courses includes
+   personal use of a sewing machine, mannequin and a working space. We also offer a library of designs with
+   their graded patterns for use outside and in class free of charge. However, some equipments are for rental.
+
+    The requirements of this course would only be grade9,since you would only need the skill and not much
+    of an academic background. The Duration of this course is six months and after that you get your
+    certificate for completing the programme. The total course fees for the Sewing is R1500.
+"
+                android:textColor="#070707" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="match_parent"
+                android:layout_height="169dp"
+                android:background="@color/white"
+                app:srcCompat="@drawable/thumbnail_img_7280" />
+
+            <ImageView
+                android:id="@+id/imageView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="400dp"
+                app:srcCompat="@drawable/sewing" />
 
 
         </FrameLayout>

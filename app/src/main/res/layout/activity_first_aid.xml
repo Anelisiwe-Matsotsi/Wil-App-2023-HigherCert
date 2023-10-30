@@ -23,10 +23,36 @@
             android:id="@+id/container"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_above="@id/bottomNav"
             android:background="#97e4e9">
 
 
+            <TextView
+                android:id="@+id/textViewHeadingFA"
+                android:layout_width="match_parent"
+                android:layout_height="77dp"
+                android:layout_marginTop="200dp"
+                android:background="@color/white"
+                android:text="First Aid"
+                android:textAlignment="center"
+                android:textColor="#050505"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewDisplay"
+                android:layout_width="345dp"
+                android:layout_height="548dp"
+                android:layout_marginLeft="36dp"
+                android:layout_marginTop="300dp"
+                android:text=" First-Aid training is for people required to analyse emergency situations and providing life support and basic first to             stabilise patients prior to their arrival  During this basic First-Aid course, you learn the important basic First-aid skills,including basic life             support and the use of an AED. You learn  how to bring a person to safety, how to access their condition and alert emergency             services. In this course you learn how to administer First-Aid to someone who is unresponsive, bleeding,choking or              suffocating,has a burn,cut,graze,bruise,sprain,bone fracture or poisoning.              However, the certificate for this course is valid for 2 years but may be extended by doing what is called a refresher course.             The entrance requirements would be being able to read and write and be able to comprehend English, Mathematics literacy(level6),             Mathematics(level4) and grade 12 NSC certificate. The duration if this course is 6 months. The total cost is R1500 inclusive of all             the equipment that will be needed for the training, also including lunch. The Assessment includes workbook completion, practical demonstration             of First-Aid skills. However, if a certain student is not yet competant then they shall only receive an attendance certificate and not the              actual qualification."
+                android:textColor="#070707" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="match_parent"
+                android:layout_height="169dp"
+                android:background="@color/white"
+                app:srcCompat="@drawable/thumbnail_img_7280" />
 
 
         </FrameLayout>

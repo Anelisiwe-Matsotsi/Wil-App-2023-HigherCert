@@ -23,10 +23,63 @@
             android:id="@+id/container"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_above="@id/bottomNav"
             android:background="#97e4e9">
 
 
+            <TextView
+                android:id="@+id/textViewHeadingFA"
+                android:layout_width="match_parent"
+                android:layout_height="77dp"
+                android:layout_marginTop="200dp"
+                android:background="@color/white"
+                android:text="Life Skills"
+                android:textAlignment="center"
+                android:textColor="#050505"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewDisplay"
+                android:layout_width="345dp"
+                android:layout_height="548dp"
+                android:layout_marginLeft="36dp"
+                android:layout_marginTop="300dp"
+                android:text="Navigating the the different aspects of everyday life requires plenty of practical skills. Problem solving,
+   cooking skills, basic comunication, general health maintenance and similar abilities enable individuals to
+   function effectively and meet the demands of modern life. Important traits like independence, problem-solving
+   ability, flexibility, and personal development can be fostered with the use of life skills. Developing these
+   abilities might also make you stand out anywhere. There are many obstacles in life, like budgeting, relocating
+   to a new location, or enrolling in college. The abilities you need to overcome those obstacles will change based
+   on your age, stage of life, and career objectives. No matter where you are in life, you can keep on top of your
+   personal development with Empowering The Nation.
+
+    Interested in acquiring new life skills to meet personal demands and increase employability? Empowering the
+    Nation offers just that for you. This course covers a lot of topics and ou can enroll and get a degree in a
+    relevant topic. The duration of this course is six months at the cost of a once of payment of R1500. However,
+    should you need a payment arrangement you will visit the financial office.
+"
+                android:textColor="#070707" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="match_parent"
+                android:layout_height="169dp"
+                android:background="@color/white"
+                app:srcCompat="@drawable/thumbnail_img_7280" />
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="650dp"
+                app:srcCompat="@drawable/lifeskills1" />
+
+            <ImageView
+                android:id="@+id/imageView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="650dp"
+                app:srcCompat="@drawable/life_skills2" />
 
 
         </FrameLayout>

@@ -14,10 +14,18 @@
         android:layout_height="78dp"
         android:layout_marginLeft="80dp"
         android:layout_marginTop="200dp"
-        android:text="Home"
+        android:text="Contact Us"
         android:textAlignment="center"
+        android:textColor="#131313"
         android:textSize="34sp"
         android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="158dp"
+        android:background="@color/white"
+        android:src="@drawable/thumbnail_img_7280" />
 
 
 </FrameLayout>
