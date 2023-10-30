@@ -11,7 +11,7 @@ class Landscaping : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_landscaping)
 
-
+       //geeksforgeeks.com,2023
         val bottomNav = findViewById<BottomNavigationView>(R.id.bottomNav)
 
         bottomNav.setOnItemSelectedListener {

@@ -19,6 +19,7 @@ class MainActivity : AppCompatActivity() {
 
         val bottomNav = findViewById<BottomNavigationView>(R.id.bottomNav)
 
+        //(IIE, 2012)
         bottomNav.setOnItemSelectedListener {
             when (it.itemId) {
                 R.id.home -> {
@@ -65,3 +66,5 @@ class MainActivity : AppCompatActivity() {
 //Refrences
 //geeksforgeeks.com,2023[Online] Available at:https://www.geeksforgeeks.org/bottom-navigation-bar-in-android/  Accessed on[26/10/2023]
 //geeksforgeeks.com,2023 [Online] Available at:https://www.geeksforgeeks.org/bottom-navigation-bar-in-android-using-kotlin/ Accessed on[26/10/2023]
+//IIE,2023. Work Integrated Learning XHAW511[Module Manual].The Independent Institute of Education: Unpublished
+//IIE,2012. Mobile Application Development IMAD5112 [Module Manual].The Independent Institute of Education: Unpublished

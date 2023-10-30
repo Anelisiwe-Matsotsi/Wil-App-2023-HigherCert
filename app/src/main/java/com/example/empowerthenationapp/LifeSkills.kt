@@ -11,6 +11,7 @@ class LifeSkills : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_life_skills)
 
+        //geeksforgeeks.com,2023
         val bottomNav = findViewById<BottomNavigationView>(R.id.bottomNav)
 
         bottomNav.setOnItemSelectedListener {

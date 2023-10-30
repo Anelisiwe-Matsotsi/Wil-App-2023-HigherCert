@@ -11,7 +11,7 @@ class ChildMinding : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_child_minding)
 
-
+        //geeksforgeeks.com,2023
         val bottomNav = findViewById<BottomNavigationView>(R.id.bottomNav)
 
         bottomNav.setOnItemSelectedListener {

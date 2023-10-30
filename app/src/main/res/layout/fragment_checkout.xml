@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#97E4E9"
+    android:fillViewport="true"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="1.0">
+<FrameLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#97e4e9"
@@ -10,10 +23,11 @@
     <!-- TODO: Update blank fragment layout -->
     <TextView
         android:id="@+id/textView"
-        android:layout_width="211dp"
+        android:layout_width="256dp"
         android:layout_height="78dp"
         android:layout_marginLeft="80dp"
         android:layout_marginTop="200dp"
+        android:background="#EDFFFFFF"
         android:text="Check Out"
         android:textAlignment="center"
         android:textColor="#131313"
@@ -31,105 +45,107 @@
         android:layout_height="match_parent">
 
 
-    <Button
-        android:id="@+id/calculateButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="calculate"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.184"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.761" />
+        <Button
+            android:id="@+id/calculateButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="calculate"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.192"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.706" />
 
-    <Button
-        android:id="@+id/submitButtton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="submit"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.659"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.771" />
+        <Button
+            android:id="@+id/submitButtton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="submit"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.731"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.706" />
 
-    <Button
-        android:id="@+id/backButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="back"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.184"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.901" />
+        <Button
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="back"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.184"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.803" />
 
-    <Button
-        android:id="@+id/nextButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="next"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.659"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.885" />
+        <Button
+            android:id="@+id/nextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="next"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.731"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.802" />
 
-    <EditText
-        android:id="@+id/editTextName"
-        android:layout_width="265dp"
-        android:layout_height="65dp"
-        android:ems="10"
-        android:inputType="text"
-        android:text="Name"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.246"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.045" />
+        <EditText
+            android:id="@+id/editTextName"
+            android:layout_width="265dp"
+            android:layout_height="65dp"
+            android:ems="10"
+            android:inputType="text"
+            android:text="Name"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.504"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.265" />
 
-    <EditText
-        android:id="@+id/editTextSurname"
-        android:layout_width="248dp"
-        android:layout_height="70dp"
-        android:ems="10"
-        android:inputType="text"
-        android:text="Surname"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.22"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.195" />
+        <EditText
+            android:id="@+id/editTextSurname"
+            android:layout_width="248dp"
+            android:layout_height="70dp"
+            android:ems="10"
+            android:inputType="text"
+            android:text="Surname"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.565"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.375" />
 
-    <TextView
-        android:id="@+id/totalFeeTextView"
-        android:layout_width="166dp"
-        android:layout_height="64dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.361" />
+        <TextView
+            android:id="@+id/totalFeeTextView"
+            android:layout_width="166dp"
+            android:layout_height="64dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.536"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.458" />
 
-    <Spinner
-        android:id="@+id/spinnerLevel"
-        android:layout_width="338dp"
-        android:layout_height="95dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.499" />
+        <Spinner
+            android:id="@+id/spinnerLevel"
+            android:layout_width="338dp"
+            android:layout_height="95dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.493"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.583" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
 
 </FrameLayout>
+</ScrollView>

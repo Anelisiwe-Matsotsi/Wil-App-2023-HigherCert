@@ -11,7 +11,7 @@ class Cooking : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_cooking)
 
-
+        //geeksforgeeks.com,2023
 
         val bottomNav = findViewById<BottomNavigationView>(R.id.bottomNav)
 

@@ -35,6 +35,7 @@ class SixWeekCoursesFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+        // tutorialspoint.com,2023
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_six_week_courses, container, false)
 
@@ -92,3 +93,5 @@ class SixWeekCoursesFragment : Fragment() {
             }
     }
 }
+//References
+//tutorialspoint.com,2023 [Online] Available at: https://www.tutorialspoint.com/how-to-implement-bottom-navigation-with-activities-in-android

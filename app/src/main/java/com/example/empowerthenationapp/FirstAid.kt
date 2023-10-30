@@ -11,7 +11,7 @@ class FirstAid : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_first_aid)
 
-
+        //geeksforgeeks.com,2023
         val bottomNav = findViewById<BottomNavigationView>(R.id.bottomNav)
 
         bottomNav.setOnItemSelectedListener {
