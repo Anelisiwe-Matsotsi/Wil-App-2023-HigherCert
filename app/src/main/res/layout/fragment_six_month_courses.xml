@@ -10,7 +10,7 @@
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#97e4e9"
+        android:background="#157581"
         tools:context=".SixMonthCoursesFragment">
 
 
@@ -38,10 +38,10 @@
 
         <Button
             android:id="@+id/button8"
-            android:layout_width="303dp"
+            android:layout_width="306dp"
             android:layout_height="101dp"
             android:layout_marginLeft="70dp"
-            android:layout_marginTop="540dp"
+            android:layout_marginTop="700dp"
             android:background="@drawable/img_7279"
             android:text="First Aid"
             android:textColor="#090909"
@@ -50,54 +50,43 @@
         <TextView
             android:id="@+id/textView"
             android:layout_width="335dp"
-            android:layout_height="77dp"
+            android:layout_height="139dp"
             android:layout_marginLeft="60dp"
-            android:layout_marginTop="250dp"
-            android:background="@color/white"
+            android:layout_marginTop="400dp"
+            android:background="#157581"
             android:text="Six Month Courses"
-            android:textColor="#050505"
-            android:textSize="34sp"
+            android:textColor="#F4F4F4"
+            android:textSize="48sp"
             android:textStyle="bold" />
+
         <Button
             android:id="@+id/button9"
             android:layout_width="303dp"
             android:layout_height="101dp"
             android:layout_marginLeft="70dp"
-            android:layout_marginTop="700dp"
+            android:layout_marginTop="850dp"
             android:background="@drawable/img_7272"
             android:text="Sewing"
             android:textColor="#090909"
             android:textSize="24sp" />
 
+
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="match_parent"
-            android:layout_height="198dp"
-            android:background="@color/white"
+            android:layout_height="176dp"
             app:srcCompat="@drawable/thumbnail_img_7280" />
 
         <TextView
             android:id="@+id/textView2"
-            android:layout_width="321dp"
-            android:layout_height="104dp"
-            android:layout_marginLeft="60dp"
-            android:layout_marginTop="400dp"
-            android:background="#FF9800"
-            android:text="Empowering the nation is a business that was established in 2018 in hopes to empower domeatic workers as           well as gardners all over Johannesburg with skills that can help them improve their wages.People are trained          on both six-month long Learnerships and six-week long Short Skills Training"
+            android:layout_width="match_parent"
+            android:layout_height="74dp"
+            android:layout_marginTop="550dp"
+            android:background="#f3d89d"
+            android:text="These are the six month courses, enter any to find out more."
+            android:textAlignment="center"
             android:textColor="#0E0E0E"
-            android:textSize="14sp" />
-
-
-        <TextView
-            android:id="@+id/textView5"
-            android:layout_width="321dp"
-            android:layout_height="106dp"
-            android:layout_marginLeft="60dp"
-            android:layout_marginTop="850dp"
-            android:background="#4CAF50"
-            android:text="Empowering the nation is a business that was established in 2018 in hopes to empower domeatic workers as           well as gardners all over Johannesburg with skills that can help them improve their wages.People are trained          on both six-month long Learnerships and six-week long Short Skills Training"
-            android:textColor="#0E0E0E"
-            android:textSize="14sp" />
+            android:textSize="24sp" />
 
 
     </FrameLayout>

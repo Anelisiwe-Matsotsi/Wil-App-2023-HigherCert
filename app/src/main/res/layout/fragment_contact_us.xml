@@ -28,11 +28,7 @@
         android:background="@color/white"
         android:src="@drawable/thumbnail_img_7280" />
 
-    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-
-        xmlns:tools="http://schemas.android.com/tools"
+    <androidx.constraintlayout.widget.ConstraintLayout
 
         android:layout_width="match_parent"
 
@@ -69,9 +65,7 @@
 
             app:layout_constraintTop_toTopOf="parent"
 
-            app:layout_constraintVertical_bias="0.357" />
-
-
+            app:layout_constraintVertical_bias="0.499" />
 
         <com.google.android.gms.maps.MapView
 
@@ -85,15 +79,13 @@
 
             app:layout_constraintEnd_toEndOf="parent"
 
-            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintHorizontal_bias="0.448"
 
             app:layout_constraintStart_toStartOf="parent"
 
             app:layout_constraintTop_toTopOf="parent"
 
-            app:layout_constraintVertical_bias="0.523" />
-
-
+            app:layout_constraintVertical_bias="0.67" />
 
         <com.google.android.gms.maps.MapView
 
@@ -107,15 +99,13 @@
 
             app:layout_constraintEnd_toEndOf="parent"
 
-            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintHorizontal_bias="0.453"
 
             app:layout_constraintStart_toStartOf="parent"
 
             app:layout_constraintTop_toTopOf="parent"
 
-            app:layout_constraintVertical_bias="0.698" />
-
-
+            app:layout_constraintVertical_bias="0.822" />
 
         <com.google.android.gms.maps.MapView
 
@@ -129,13 +119,13 @@
 
             app:layout_constraintEnd_toEndOf="parent"
 
-            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintHorizontal_bias="0.457"
 
             app:layout_constraintStart_toStartOf="parent"
 
             app:layout_constraintTop_toTopOf="parent"
 
-            app:layout_constraintVertical_bias="0.888" />
+            app:layout_constraintVertical_bias="0.989" />
 
 
 
