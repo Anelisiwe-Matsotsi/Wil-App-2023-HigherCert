@@ -1,8 +1,10 @@
 package com.example.empowerthenationapp
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.widget.Button
 import androidx.fragment.app.Fragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
@@ -13,6 +15,7 @@ class ChildMinding : AppCompatActivity() {
 
         //geeksforgeeks.com,2023
         val bottomNav = findViewById<BottomNavigationView>(R.id.bottomNav)
+
 
         bottomNav.setOnItemSelectedListener {
             when (it.itemId) {

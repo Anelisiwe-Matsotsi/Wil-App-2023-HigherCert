@@ -19,215 +19,96 @@
         android:background="#FFFFFF"
         tools:context=".Cooking">
 
+
         <FrameLayout
             android:id="@+id/container"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#97e4e9">
-
+            android:background="#157581">
 
 
             <ImageView
-                android:id="@+id/imageViewLogo"
+                android:id="@+id/imageViewL3"
                 android:layout_width="match_parent"
                 android:layout_height="199dp"
-                android:background="#FFFFFF"
                 android:layout_gravity="top"
-                app:srcCompat="@drawable/thumbnail_img_7280"
-                android:contentDescription="TODO" />
+                android:background="#FFFFFF"
+                android:contentDescription="TODO"
+                app:srcCompat="@drawable/thumbnail_img_7280" />
 
             <TextView
                 android:id="@+id/textViewCooking"
-                android:layout_width="348dp"
-                android:layout_height="49dp"
+                android:layout_width="301dp"
+                android:layout_height="59dp"
                 android:layout_marginLeft="50dp"
                 android:layout_marginTop="230dp"
-                android:background="#FFFF"
-                android:text="               Cooking"
-                android:textColor="#000000"
+                android:text="            Cooking"
+                android:textColor="#FFFFFF"
                 android:textSize="30sp" />
 
             <TextView
-                android:id="@+id/textViewInfo"
-                android:layout_width="348dp"
-                android:layout_height="669dp"
+                android:id="@+id/textViewText1"
+                android:layout_width="304dp"
+                android:layout_height="wrap_content"
                 android:layout_marginLeft="50dp"
-                android:layout_marginTop="305dp"
-                android:background="#FF9800"
-                android:text="Join our Cooking Course and embark on a delicious journey to master the art of cooking nutritious and delectable meals. Whether you're a complete beginner in the kitchen, an intermediate cook looking to enhance your skills, or an advanced culinary enthusiast, this course is designed to cater to your culinary aspirations. In our Cooking Course, you'll explore a world of flavors and discover the essentials of creating nourishing dishes. Here's what you can look forward to:  Nutritional Expertise: Gain a deep understanding of nutritional requirements for a healthy body. Learn how to create well-balanced meals that provide the essential proteins, carbohydrates, and vitamins necessary for optimal health. Ingredients and Techniques: Our experienced instructors will guide you through the selection of quality ingredients and the mastery of cooking techniques. You'll learn how to transform simple ingredients into mouthwatering dishes that will impress your boss, your family, friends, and anyone else. Adaptable for All Skill Levels: Our course is inclusive and welcoming to individuals of all cooking skill levels. Whether you're a novice looking to build your culinary foundation or an experienced cook aiming to refine your expertise, our course offers tailored instruction to meet your needs. Cooking Utensils and Ingredients Provided: We understand that having the right tools and ingredients is essential for success in the kitchen. That's why we provide all the necessary cooking utensils and ingredients, so you can focus on learning and creating without any hassles. Our sessions run from 1:00 pm to 4:00 pm, three times a week, on Wednesday, Thursday, and Friday. This flexible schedule allows you to pursue your passion for cooking without disrupting your daily routine. Enroll in our Cooking Course today and unlock the culinary artist within you. Whether you dream of preparing gourmet meals or simply want to whip up wholesome dishes for your family, our course will set you on the path to culinary excellence. Let's create and savor memorable flavors together! Fees: R750"
-                android:textColor="#000000"
-                android:textSize="14sp" />
+                android:layout_marginTop="480dp"
+
+                android:text="Explore a world of flavors, master the art of cooking nutritious meals, and enhance your culinary skills."
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="28sp" />
+
             <ImageView
-                android:id="@+id/imageViewCook"
-                android:layout_width="193dp"
-                android:layout_height="182dp"
-                android:layout_marginLeft="50dp"
-                android:layout_marginTop="960dp"
-                android:background="#FF9800"
-                app:srcCompat="@drawable/cooking" />
-            <ImageView
-                android:id="@+id/imageViewPrep"
-                android:layout_width="160dp"
-                android:layout_height="182dp"
-                android:layout_marginLeft="240dp"
-                android:layout_marginTop="960dp"
-                android:background="#FF9800"
+                android:id="@+id/imageViewCooking"
+                android:layout_width="200dp"
+                android:layout_height="180dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="650dp"
                 app:srcCompat="@drawable/mealprep" />
 
-            <ImageView
-                android:id="@+id/imageViewBlog"
-                android:layout_width="193dp"
-                android:layout_height="182dp"
-                android:layout_marginLeft="50dp"
-                android:layout_marginTop="1110dp"
-                android:background="#FF9800"
-                app:srcCompat="@drawable/cookingblog" />
-
-            <ImageView
-                android:id="@+id/imageViewClass"
-                android:layout_width="160dp"
-                android:layout_height="182dp"
-                android:layout_marginLeft="240dp"
-                android:layout_marginTop="1110dp"
-                android:background="#FF9800"
-                app:srcCompat="@drawable/cookingclass" />
-
             <TextView
-                android:id="@+id/textViewInstructors"
-                android:layout_width="345dp"
-                android:layout_height="49dp"
-                android:layout_marginLeft="50dp"
-                android:layout_marginTop="1362dp"
-                android:background="#4CAF50"
-                android:text="        Instructor Profiles"
-                android:textColor="#FFFF"
-                android:textSize="30sp"
-                tools:ignore="TextContrastCheck" />
+                android:id="@+id/textViewText2"
+                android:layout_width="340dp"
+                android:layout_height="150dp"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="300dp"
+                android:background="#f3d89d"
+                android:text=" Head\n Instructor \n \n  Michelle Baker"
+                android:textAlignment="textStart"
+                android:textColor="#0E0E0E"
+                android:textSize="26sp" />
 
             <ImageView
-                android:id="@+id/imageViewBaker"
-                android:layout_width="345dp"
-                android:layout_height="182dp"
-                android:layout_marginLeft="50dp"
-                android:layout_marginTop="1412dp"
-                android:background="#4CAF50"
+                android:id="@+id/imageViewMichelle"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:layout_marginLeft="235dp"
+                android:layout_marginTop="300dp"
                 app:srcCompat="@drawable/michelle_baker_chef1_" />
 
             <TextView
-                android:id="@+id/textViewMichelle"
-                android:layout_width="345dp"
-                android:layout_height="180dp"
-                android:layout_marginLeft="50dp"
-                android:layout_marginTop="1596dp"
-                android:background="#4CAF50"
-                android:text="Chef Michelle Baker
+                android:id="@+id/textViewText3"
+                android:layout_width="228dp"
+                android:layout_height="82dp"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="850dp"
+                android:text="Fees: \nR750"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="32sp" />
 
-                                  With over 20 years of culinary experience, Chef Michelle Baker is a seasoned professional in the world of cooking. She specializes in international cuisines and has worked in renowned restaurants across the globe. Michelle is passionate about teaching and believes that anyone can become a great cook with the right guidance."
-                android:textColor="#FFFF"
-                android:textSize="12sp"
-                tools:ignore="TextContrastCheck" />
+            <Button
+                android:id="@+id/buttonBookNow"
+                android:layout_width="200dp"
+                android:layout_height="92dp"
+                android:layout_marginLeft="90dp"
+                android:layout_marginTop="960dp"
+                android:text="Book Now!"
+                android:textColor="#4CAF50"
+                android:textSize="24sp" />
 
-            <ImageView
-                android:id="@+id/imageViewBhengu"
-                android:layout_width="345dp"
-                android:layout_height="182dp"
-                android:layout_marginLeft="50dp"
-                android:layout_marginTop="1778dp"
-                android:background="#4CAF50"
-                app:srcCompat="@drawable/bonginkosi_bhengu_chef2_" />
-
-            <TextView
-                android:id="@+id/textViewBongi"
-                android:layout_width="345dp"
-                android:layout_height="180dp"
-                android:layout_marginLeft="50dp"
-                android:layout_marginTop="1960dp"
-                android:background="#4CAF50"
-                android:text="Chef Bonginkosi Bhengu
-
-                                    Chef Bonginkosi Bhengu is a culinary artist known for his innovative approach to traditional recipes. He has a flair for creating gourmet dishes and loves to share his culinary knowledge. With a background in both classical and modern cooking techniques, Nkosi is dedicated to helping students explore the world of gastronomy."
-                android:textColor="#FFFF"
-                android:textSize="14sp"
-                tools:ignore="TextContrastCheck" />
-
-            <ImageView
-                android:id="@+id/imageViewAdams"
-                android:layout_width="346dp"
-                android:layout_height="182dp"
-                android:layout_marginLeft="50dp"
-                android:layout_marginTop="2137dp"
-                android:background="#4CAF50"
-                app:srcCompat="@drawable/emily_adams_chef3_"
-                />
-
-            <TextView
-                android:id="@+id/textViewEmily"
-                android:layout_width="347dp"
-                android:layout_height="180dp"
-                android:layout_marginLeft="50dp"
-                android:layout_marginTop="2320dp"
-                android:background="#4CAF50"
-                android:text="Chef Emily Adams
-
-                                             Chef Emily Adams is a rising star in the culinary world. Her fresh perspective and creative cooking style have earned her accolades in the industry. She is committed to making cooking accessible and enjoyable for everyone. Emily's classes are known for their lively and interactive atmosphere."
-                android:textColor="#FFFF"
-                android:textSize="14sp"
-                tools:ignore="TextContrastCheck" />
-
-            <TextView
-                android:id="@+id/textViewTestimonies"
-                android:layout_width="347dp"
-                android:layout_height="60dp"
-                android:layout_marginLeft="50dp"
-                android:layout_marginTop="2580dp"
-                android:background="#FF9800"
-                android:text="      Student Testimonies"
-                android:textColor="#000"
-                android:textSize="30sp"
-                tools:ignore="TextContrastCheck" />
-
-            <TextView
-                android:id="@+id/textViewTestimony1"
-                android:layout_width="347dp"
-                android:layout_height="180dp"
-                android:layout_marginLeft="50dp"
-                android:layout_marginTop="2640dp"
-                android:background="#FF9800"
-                android:text="&quot;This Cooking Course has been a life-changing experience. As a beginner, I had little confidence in the kitchen, but the instructors here made me feel at ease. I now cook with joy and have impressed my family with my newfound skills!&quot;
-             - Thandi B."
-                android:textColor="#000"
-                android:textSize="16sp"
-                tools:ignore="TextContrastCheck" />
-
-            <TextView
-                android:id="@+id/textViewTestimony2"
-                android:layout_width="345dp"
-                android:layout_height="180dp"
-                android:layout_marginLeft="50dp"
-                android:layout_marginTop="2820dp"
-                android:background="#FF9800"
-                android:text="&quot;I enrolled in this course as an intermediate cook, and it exceeded my expectations. The instructors' passion for cooking is contagious. I've learned a variety of recipes and techniques that have elevated my culinary game. I look forward to every session!&quot;
-
-                                -Dawson D."
-                android:textColor="#000"
-                android:textSize="16sp"
-                tools:ignore="TextContrastCheck" />
-
-            <TextView
-                android:id="@+id/textViewTestimony3"
-                android:layout_width="344dp"
-                android:layout_height="180dp"
-                android:layout_marginStart="50dp"
-                android:layout_marginTop="3000dp"
-                android:background="#FF9800"
-                android:text="&quot;As an advanced cook, I was looking for a course to refine my skills. This course offers a delightful mix of culinary traditions and techniques. I've discovered new culinary horizons and love experimenting with different flavors. It's been a fantastic journey!&quot;
-               - Ester M."
-                android:textColor="#000"
-                android:textSize="16sp"
-                tools:ignore="TextContrastCheck" />
 
         </FrameLayout>
-
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/bottomNav"
