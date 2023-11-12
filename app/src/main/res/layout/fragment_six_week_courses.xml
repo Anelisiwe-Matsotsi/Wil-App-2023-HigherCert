@@ -64,10 +64,6 @@
             android:background="@color/white"
             app:srcCompat="@drawable/thumbnail_img_7280" />
 
-        <SearchView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-
 
     </FrameLayout>
 </ScrollView>
