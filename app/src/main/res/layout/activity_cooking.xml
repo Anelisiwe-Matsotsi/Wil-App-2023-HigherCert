@@ -1,24 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/scrollView2"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#97E4E9"
-    android:fillViewport="true"
-    app:layout_constraintBottom_toBottomOf="parent"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintHorizontal_bias="0.0"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toTopOf="parent"
-    app:layout_constraintVertical_bias="1.0">
-    <RelativeLayout
+    android:background="#FFFFFF"
+    tools:context=".Cooking">
+
+
+    <ScrollView
+        android:id="@+id/scrollView2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#FFFFFF"
-        tools:context=".Cooking">
-
+        android:background="#97E4E9"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
 
         <FrameLayout
             android:id="@+id/container"
@@ -38,32 +39,31 @@
 
             <TextView
                 android:id="@+id/textViewCooking"
-                android:layout_width="301dp"
-                android:layout_height="59dp"
-                android:layout_marginLeft="50dp"
+                android:layout_width="394dp"
+                android:layout_height="114dp"
                 android:layout_marginTop="230dp"
                 android:text="            Cooking"
-                android:textColor="#FFFFFF"
-                android:textSize="30sp" />
+                android:textAlignment="center"
+                android:textColor="#EAE08D"
+                android:textSize="48sp" />
 
             <TextView
                 android:id="@+id/textViewText1"
-                android:layout_width="304dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="50dp"
-                android:layout_marginTop="480dp"
-
+                android:layout_width="wrap_content"
+                android:layout_height="195dp"
+                android:layout_marginTop="550dp"
+                android:background="#15909F"
                 android:text="Explore a world of flavors, master the art of cooking nutritious meals, and enhance your culinary skills."
                 android:textAlignment="center"
                 android:textColor="#FFFFFF"
-                android:textSize="28sp" />
+                android:textSize="34sp" />
 
             <ImageView
                 android:id="@+id/imageViewCooking"
-                android:layout_width="200dp"
+                android:layout_width="257dp"
                 android:layout_height="180dp"
                 android:layout_marginLeft="100dp"
-                android:layout_marginTop="650dp"
+                android:layout_marginTop="750dp"
                 app:srcCompat="@drawable/mealprep" />
 
             <TextView
@@ -71,8 +71,8 @@
                 android:layout_width="340dp"
                 android:layout_height="150dp"
                 android:layout_marginLeft="70dp"
-                android:layout_marginTop="300dp"
-                android:background="#f3d89d"
+                android:layout_marginTop="350dp"
+                android:background="#4CAF50"
                 android:text=" Head\n Instructor \n \n  Michelle Baker"
                 android:textAlignment="textStart"
                 android:textColor="#0E0E0E"
@@ -83,15 +83,15 @@
                 android:layout_width="wrap_content"
                 android:layout_height="150dp"
                 android:layout_marginLeft="235dp"
-                android:layout_marginTop="300dp"
+                android:layout_marginTop="350dp"
                 app:srcCompat="@drawable/michelle_baker_chef1_" />
 
             <TextView
                 android:id="@+id/textViewText3"
-                android:layout_width="228dp"
-                android:layout_height="82dp"
-                android:layout_marginLeft="80dp"
-                android:layout_marginTop="850dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="950dp"
+                android:background="#15909F"
                 android:text="Fees: \nR750"
                 android:textAlignment="center"
                 android:textColor="#FFFFFF"
@@ -99,31 +99,33 @@
 
             <Button
                 android:id="@+id/buttonBookNow"
-                android:layout_width="200dp"
+                android:layout_width="234dp"
                 android:layout_height="92dp"
                 android:layout_marginLeft="90dp"
-                android:layout_marginTop="960dp"
+                android:layout_marginTop="1050dp"
                 android:text="Book Now!"
                 android:textColor="#4CAF50"
                 android:textSize="24sp" />
 
 
         </FrameLayout>
+    </ScrollView>
 
-        <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/bottomNav"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_alignParentBottom="true"
-            android:layout_marginBottom="20dp"
-            android:background="#FF9800"
-            android:scrollIndicators="left"
-            app:itemTextColor="#0C0B0B"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="parent"
-            app:menu="@menu/nav_menu" />
-    </RelativeLayout>
-
-</ScrollView>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNav"
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="17dp"
+        android:background="#c2c0bc"
+        android:scrollIndicators="left"
+        app:itemIconSize="38dp"
+        app:itemIconTint="@color/black"
+        app:itemTextColor="#0C0B0B"
+        app:labelVisibilityMode="labeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/nav_menu" />
+</RelativeLayout>
