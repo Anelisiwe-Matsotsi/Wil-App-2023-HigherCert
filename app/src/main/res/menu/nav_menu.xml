@@ -15,11 +15,6 @@
         android:title="Six Months Courses" />
 
     <item
-        android:id="@+id/checkout"
-        android:icon="@drawable/ic_checkout_foreground"
-        android:title="Checkout" />
-
-    <item
         android:id="@+id/contactus"
         android:icon="@drawable/ic_contactus_foreground"
         android:title="ContactUs" />

@@ -1,13 +1,16 @@
 package com.example.empowerthenationapp
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.widget.Button
 import androidx.fragment.app.Fragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
+
 class Cooking : AppCompatActivity() {
-    lateinit var bottomNav : BottomNavigationView
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_cooking)
@@ -15,6 +18,17 @@ class Cooking : AppCompatActivity() {
         //geeksforgeeks.com,2023
 
         val bottomNav = findViewById<BottomNavigationView>(R.id.bottomNav)
+        val buttonBookNow = findViewById<Button>(R.id.buttonBookNow)
+
+
+
+
+        buttonBookNow.setOnClickListener {
+
+            val intent = Intent( this, CheckoutPage::class.java)
+
+            startActivity(intent)
+        }
 
         bottomNav.setOnItemSelectedListener {
             when (it.itemId) {
@@ -33,10 +47,7 @@ class Cooking : AppCompatActivity() {
                     true
                 }
 
-                R.id.checkout -> {
-                    loadFragment(CheckoutFragment())
-                    true
-                }
+
 
                 R.id.contactus -> {
                     loadFragment(ContactUsFragment())

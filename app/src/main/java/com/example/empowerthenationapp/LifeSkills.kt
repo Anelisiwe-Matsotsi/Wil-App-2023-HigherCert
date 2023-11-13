@@ -8,7 +8,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class LifeSkills : AppCompatActivity() {
 
-    lateinit var bottomNav : BottomNavigationView
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_life_skills)
@@ -33,10 +33,6 @@ class LifeSkills : AppCompatActivity() {
                     true
                 }
 
-                R.id.checkout -> {
-                    loadFragment(CheckoutFragment())
-                    true
-                }
 
                 else -> {
                     Log.e("MainActivity", "Invalid menu item selected: ${it.itemId}")

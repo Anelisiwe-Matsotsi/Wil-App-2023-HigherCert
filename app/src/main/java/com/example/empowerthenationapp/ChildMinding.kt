@@ -9,7 +9,7 @@ import androidx.fragment.app.Fragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class ChildMinding : AppCompatActivity() {
-    lateinit var bottomNav : BottomNavigationView
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_child_minding)
@@ -32,11 +32,6 @@ class ChildMinding : AppCompatActivity() {
 
                 R.id.settings -> {
                     loadFragment(SixMonthCoursesFragment())
-                    true
-                }
-
-                R.id.checkout -> {
-                    loadFragment(CheckoutFragment())
                     true
                 }
 
