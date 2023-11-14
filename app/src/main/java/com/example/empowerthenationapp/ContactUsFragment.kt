@@ -53,7 +53,8 @@ class ContactUsFragment : Fragment() {
         instaIcon.setOnClickListener {
 
             startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("https://m.Facebook.com")))
-        }
+        }  //(With Sam,2023)
+        //(Coding wth boss,2023)
 
     return view
     }
@@ -78,3 +79,6 @@ class ContactUsFragment : Fragment() {
             }
     }
 }
+//References
+//With Sam,2023 [Online] Available at: https://youtu.be/TU-yDCgpbZw?feature=shared - social media links
+//Coding wth boss,2023 [Online] Available at:https://youtu.be/FApQ2xuFEG4?feature=shared

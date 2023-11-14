@@ -40,7 +40,7 @@
             android:id="@+id/textViewSlogan"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:layout_marginTop="290dp"
+            android:layout_marginTop="260dp"
             android:background="#157581"
             android:text="EMPOWERING THE NATION"
             android:textAlignment="center"
@@ -52,7 +52,7 @@
             android:id="@+id/map1"
             android:layout_width="match_parent"
             android:layout_height="77dp"
-            android:layout_marginTop="655dp"
+            android:layout_marginTop="705dp"
             android:text="Venue 1, IIE VARSITY COLLEGE"
             android:textAlignment="center"
             android:textColor="#EAE08D"
@@ -62,14 +62,14 @@
             android:id="@+id/imageView10"
             android:layout_width="wrap_content"
             android:layout_height="300dp"
-            android:layout_marginTop="700dp"
+            android:layout_marginTop="750dp"
             android:layout_gravity="center_horizontal"
             android:src="@drawable/map_1" />
         <TextView
             android:id="@+id/map2"
             android:layout_width="match_parent"
             android:layout_height="77dp"
-            android:layout_marginTop="1050dp"
+            android:layout_marginTop="1100dp"
             android:text="Venue 2, City Varsity Braamfontein"
             android:textAlignment="center"
             android:textColor="#EAE08D"
@@ -79,7 +79,7 @@
             android:id="@+id/imageView12"
             android:layout_width="wrap_content"
             android:layout_height="300dp"
-            android:layout_marginTop="1100dp"
+            android:layout_marginTop="1150dp"
             android:layout_gravity="center_horizontal"
             android:src="@drawable/map_2" />
 
@@ -87,7 +87,7 @@
             android:id="@+id/mapview"
             android:layout_width="match_parent"
             android:layout_height="70dp"
-            android:layout_marginTop="330dp"
+            android:layout_marginTop="310dp"
             android:autoLink="phone"
             android:background="@android:color/holo_orange_dark"
             android:padding="16dp"
@@ -99,7 +99,7 @@
             android:id="@+id/map3"
             android:layout_width="match_parent"
             android:layout_height="77dp"
-            android:layout_marginTop="1450dp"
+            android:layout_marginTop="1490dp"
             android:text="Venue 2, City Varsity Braamfontein"
             android:textAlignment="center"
             android:textColor="#EAE08D"
@@ -109,14 +109,14 @@
             android:id="@+id/imageView14"
             android:layout_width="wrap_content"
             android:layout_height="300dp"
-            android:layout_marginTop="1500dp"
+            android:layout_marginTop="1550dp"
             android:layout_gravity="center_horizontal"
             app:srcCompat="@drawable/map_3" />
         <TextView
             android:id="@+id/emailView"
             android:layout_width="match_parent"
             android:layout_height="70dp"
-            android:layout_marginTop="410dp"
+            android:layout_marginTop="399dp"
             android:autoLink="email"
             android:background="@android:color/holo_blue_dark"
             android:padding="16dp"
@@ -136,7 +136,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"     android:background="@android:color/holo_blue_dark"
+            android:orientation="horizontal"
             android:layout_marginTop="550dp">
 
 
