@@ -52,7 +52,7 @@
             android:id="@+id/map1"
             android:layout_width="match_parent"
             android:layout_height="77dp"
-            android:layout_marginTop="650dp"
+            android:layout_marginTop="655dp"
             android:text="Venue 1, IIE VARSITY COLLEGE"
             android:textAlignment="center"
             android:textColor="#EAE08D"
@@ -127,7 +127,7 @@
         android:id="@+id/w"
         android:layout_width="match_parent"
         android:layout_height="77dp"
-        android:layout_marginTop="500dp"
+        android:layout_marginTop="480dp"
         android:text="Follow Us On:"
         android:textAlignment="center"
         android:textColor="#EAE08D"
@@ -136,7 +136,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
+            android:orientation="horizontal"     android:background="@android:color/holo_blue_dark"
             android:layout_marginTop="550dp">
 
 
@@ -153,7 +153,7 @@
                 android:layout_width="70dp"
                 android:layout_height="70dp"
                 android:layout_marginStart="100dp"
-            android:src="@drawable/x" />
+            android:src="@drawable/twt" />
             <ImageView
                 android:id="@+id/instaIcon"
                 android:layout_width="70dp"
