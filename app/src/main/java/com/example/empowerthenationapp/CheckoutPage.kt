@@ -10,7 +10,7 @@ import android.widget.TextView
 
 class CheckoutPage : AppCompatActivity() {
 
-    private val checkBoxValues = arrayOf(10, 20, 30)
+    private val checkBoxValues = arrayOf(750, 750, 750)
     private var result = 0
     private var redValue = 0
     private var blueValue = 0
