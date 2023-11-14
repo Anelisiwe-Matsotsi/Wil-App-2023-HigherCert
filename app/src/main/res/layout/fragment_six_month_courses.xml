@@ -55,7 +55,7 @@
             android:layout_marginTop="400dp"
             android:background="#157581"
             android:text="Six Month Courses"
-            android:textColor="#F4F4F4"
+            android:textColor="#EAE08D"
             android:textSize="48sp"
             android:textStyle="bold" />
 
