@@ -14,7 +14,7 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="1634dp"
+            android:layout_height="1420dp"
             android:background="#157581"
             tools:context=".SixMonthCoursesFragment">
 
@@ -53,16 +53,16 @@
                 app:cardPreventCornerOverlap="true"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.619"
+                app:layout_constraintHorizontal_bias="0.636"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.679">
+                app:layout_constraintVertical_bias="0.792">
 
 
                 <RelativeLayout
                     android:id="@+id/relativeLayout"
-                    android:layout_width="313dp"
-                    android:layout_height="147dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:background="@drawable/grasient_drawable"
                     android:minHeight="100dp"
                     android:padding="10dp"
@@ -127,15 +127,15 @@
                 app:cardPreventCornerOverlap="true"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.619"
+                app:layout_constraintHorizontal_bias="0.627"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.545">
+                app:layout_constraintVertical_bias="0.607">
 
                 <RelativeLayout
                     android:id="@+id/relativeLayout2"
-                    android:layout_width="318dp"
-                    android:layout_height="145dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:background="@drawable/grasient_drawable"
                     android:minHeight="100dp"
                     android:padding="10dp"
@@ -206,8 +206,8 @@
 
                 <RelativeLayout
                     android:id="@+id/relativeLayout3"
-                    android:layout_width="313dp"
-                    android:layout_height="143dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:background="@drawable/grasient_drawable"
                     android:minHeight="100dp"
                     android:padding="10dp"
@@ -276,15 +276,15 @@
                 app:cardPreventCornerOverlap="true"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.619"
+                app:layout_constraintHorizontal_bias="0.655"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.819">
+                app:layout_constraintVertical_bias="0.97">
 
                 <RelativeLayout
                     android:id="@+id/relativeLayout4"
-                    android:layout_width="313dp"
-                    android:layout_height="147dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:background="@drawable/grasient_drawable"
                     android:minHeight="100dp"
                     android:padding="10dp"
@@ -354,19 +354,6 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.315" />
-
-            <Button
-                android:id="@+id/buttonBook"
-                android:layout_width="234dp"
-                android:layout_height="92dp"
-                android:layout_marginEnd="100dp"
-                android:layout_marginBottom="76dp"
-                android:drawableRight="@drawable/ic_checkout_foreground"
-                android:text="Book Now!"
-                android:textColor="#4CAF50"
-                android:textSize="24sp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>

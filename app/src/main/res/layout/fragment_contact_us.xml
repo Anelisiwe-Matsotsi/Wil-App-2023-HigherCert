@@ -24,7 +24,7 @@
             android:text="Contact Us"
             android:textAlignment="center"
             android:textColor="#EAE08D"
-            android:textSize="48sp"
+            android:textSize="34sp"
             android:textStyle="bold" />
 
         <!-- Image Banner -->
@@ -38,15 +38,15 @@
         <!-- Slogan and Contact Information -->
         <TextView
             android:id="@+id/textViewSlogan"
-            android:layout_width="481dp"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
             android:layout_marginTop="290dp"
             android:background="#157581"
             android:text="EMPOWERING THE NATION"
             android:textAlignment="center"
             android:textColor="#050505"
             android:textSize="30sp"
-            android:textStyle="italic" />
+            android:textStyle="bold|italic" />
 
         <TextView
             android:id="@+id/map1"
@@ -89,11 +89,10 @@
             android:layout_height="70dp"
             android:layout_marginTop="330dp"
             android:autoLink="phone"
-            android:background="#EAE08D"
+            android:background="@android:color/holo_orange_dark"
             android:padding="16dp"
             android:text="Phone: +27 748873445"
             android:textAlignment="center"
-            android:textColor="#455A64"
             android:textSize="25sp" />
 
         <TextView
@@ -134,34 +133,33 @@
         android:textColor="#EAE08D"
         android:textSize="34sp"
         android:textStyle="bold" />
-
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="95dp"
-            android:layout_marginTop="550dp"
-            android:background="@android:color/holo_blue_dark"
-            android:orientation="horizontal">
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"     android:background="@android:color/holo_blue_dark"
+            android:layout_marginTop="550dp">
 
 
             <ImageView
                 android:id="@+id/facebookIcon"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
-                android:src="@drawable/zbf" />
+                android:src="@drawable/zbf"/>
+
+
 
             <ImageView
                 android:id="@+id/twitterIcon"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
                 android:layout_marginStart="100dp"
-                android:src="@drawable/twt" />
-
+            android:src="@drawable/twt" />
             <ImageView
                 android:id="@+id/instaIcon"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
                 android:layout_marginStart="80dp"
-                android:src="@drawable/insta" />
+                android:src="@drawable/insta"/>
         </LinearLayout>
     </FrameLayout>
 </ScrollView>
