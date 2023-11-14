@@ -42,12 +42,12 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.982" />
+                app:layout_constraintVertical_bias="0.946" />
 
             <TextView
                 android:id="@+id/textView"
-                android:layout_width="510dp"
-                android:layout_height="209dp"
+                android:layout_width="433dp"
+                android:layout_height="238dp"
                 android:background="#157581"
                 android:text="Let Us Empower your mind"
                 android:textAlignment="center"
@@ -89,8 +89,8 @@
 
             <TextView
                 android:id="@+id/textView6"
-                android:layout_width="423dp"
-                android:layout_height="97dp"
+                android:layout_width="481dp"
+                android:layout_height="279dp"
                 android:background="#15909F"
                 android:text="Score Discounts By Getting Two Or More Coureses! "
                 android:textAlignment="center"
@@ -98,9 +98,10 @@
                 android:textSize="34sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.26"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.862" />
+                app:layout_constraintVertical_bias="0.964" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </FrameLayout>
