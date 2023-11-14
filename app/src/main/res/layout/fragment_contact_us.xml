@@ -104,11 +104,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="300dp"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginEnd="108dp"
                 android:layout_marginBottom="440dp"
                 android:src="@drawable/map_2"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent" />
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
 
             <TextView
                 android:id="@+id/mapview"
@@ -145,10 +145,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="300dp"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginBottom="16dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.461"
                 app:layout_constraintStart_toStartOf="parent"
                 app:srcCompat="@drawable/map_3" />
 
@@ -181,14 +179,15 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <LinearLayout
-                android:layout_width="523dp"
-                android:layout_height="76dp"
-                android:layout_marginTop="676dp"
+                android:layout_width="460dp"
+                android:layout_height="74dp"
+                android:layout_marginBottom="1300dp"
                 android:background="@android:color/holo_blue_dark"
                 android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
+                app:layout_constraintHorizontal_bias="0.197"
+                app:layout_constraintStart_toStartOf="parent">
 
 
                 <ImageView
