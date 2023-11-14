@@ -16,18 +16,18 @@
         <!-- Header -->
 
 
+        <!-- Image Banner -->
         <TextView
             android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="77dp"
-            android:layout_marginTop="200dp"
+            android:layout_marginTop="180dp"
             android:text="Contact Us"
             android:textAlignment="center"
             android:textColor="#EAE08D"
             android:textSize="34sp"
             android:textStyle="bold" />
 
-        <!-- Image Banner -->
         <ImageView
             android:id="@+id/imageView2"
             android:layout_width="match_parent"
@@ -40,12 +40,12 @@
             android:id="@+id/textViewSlogan"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:layout_marginTop="260dp"
+            android:layout_marginTop="250dp"
             android:background="#157581"
             android:text="EMPOWERING THE NATION"
             android:textAlignment="center"
             android:textColor="#050505"
-            android:textSize="30sp"
+            android:textSize="27sp"
             android:textStyle="bold|italic" />
 
         <TextView
