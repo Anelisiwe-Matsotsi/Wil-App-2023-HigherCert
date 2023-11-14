@@ -13,6 +13,13 @@ class ChildMinding : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_child_minding)
+        val buttonBookNow=findViewById<Button>(R.id.buttonBookNow)
+        buttonBookNow.setOnClickListener {
+
+            val intent = Intent(this, CheckoutPage::class.java)
+
+            startActivity(intent)
+        }
 
         //geeksforgeeks.com,2023
         val bottomNav = findViewById<BottomNavigationView>(R.id.bottomNav)

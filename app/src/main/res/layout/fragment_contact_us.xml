@@ -24,9 +24,8 @@
             <!-- Image Banner -->
 
             <!-- Slogan and Contact Information -->
-
             <ImageView
-                android:id="@+id/imageView2"
+                android:id="@+id/imageView"
                 android:layout_width="420dp"
                 android:layout_height="222dp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -104,8 +103,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="300dp"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginEnd="108dp"
-                android:layout_marginBottom="440dp"
+                android:layout_marginEnd="36dp"
+                android:layout_marginBottom="476dp"
                 android:src="@drawable/map_2"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent" />
@@ -181,10 +180,9 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <LinearLayout
-                android:layout_width="523dp"
-                android:layout_height="76dp"
-                android:layout_marginTop="676dp"
-                android:background="@android:color/holo_blue_dark"
+                android:layout_width="430dp"
+                android:layout_height="88dp"
+                android:layout_marginTop="664dp"
                 android:orientation="horizontal"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -196,7 +194,6 @@
                     android:layout_width="70dp"
                     android:layout_height="70dp"
                     android:src="@drawable/zbf" />
-
 
                 <ImageView
                     android:id="@+id/twitterIcon"

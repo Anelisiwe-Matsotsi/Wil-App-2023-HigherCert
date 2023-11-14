@@ -18,14 +18,14 @@ class Cooking : AppCompatActivity() {
         //geeksforgeeks.com,2023
 
         val bottomNav = findViewById<BottomNavigationView>(R.id.bottomNav)
-        val buttonBookNow = findViewById<Button>(R.id.buttonBookNow)
 
 
 
 
-        buttonBookNow.setOnClickListener {
+        val buttonNowCheck=findViewById<Button>(R.id.buttonNowCheck)
+        buttonNowCheck.setOnClickListener {
 
-            val intent = Intent( this, CheckoutPage::class.java)
+            val intent = Intent(this, CheckoutPage::class.java)
 
             startActivity(intent)
         }
