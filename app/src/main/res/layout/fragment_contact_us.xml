@@ -51,14 +51,15 @@
                 android:id="@+id/textViewSlogan"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
+                android:layout_marginTop="372dp"
                 android:background="#157581"
                 android:text="EMPOWERING THE NATION"
                 android:textAlignment="center"
                 android:textColor="#FFF1F1"
                 android:textSize="30sp"
                 android:textStyle="italic"
-                tools:layout_editor_absoluteX="16dp"
-                tools:layout_editor_absoluteY="338dp" />
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/map1"
@@ -79,30 +80,35 @@
                 android:layout_width="wrap_content"
                 android:layout_height="300dp"
                 android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="856dp"
                 android:src="@drawable/map_1"
-                tools:layout_editor_absoluteX="84dp"
-                tools:layout_editor_absoluteY="906dp" />
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
 
             <TextView
                 android:id="@+id/map2"
                 android:layout_width="match_parent"
                 android:layout_height="77dp"
+                android:layout_marginBottom="316dp"
                 android:text="Venue 2, City Varsity Braamfontein"
                 android:textAlignment="center"
                 android:textColor="#EAE08D"
                 android:textSize="24sp"
                 android:textStyle="bold"
-                tools:layout_editor_absoluteX="-16dp"
-                tools:layout_editor_absoluteY="1643dp" />
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
 
             <ImageView
                 android:id="@+id/imageView12"
                 android:layout_width="wrap_content"
                 android:layout_height="300dp"
                 android:layout_gravity="center_horizontal"
+                android:layout_marginEnd="108dp"
+                android:layout_marginBottom="440dp"
                 android:src="@drawable/map_2"
-                tools:layout_editor_absoluteX="84dp"
-                tools:layout_editor_absoluteY="1303dp" />
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
 
             <TextView
                 android:id="@+id/mapview"
@@ -115,30 +121,36 @@
                 android:textAlignment="center"
                 android:textSize="25sp"
                 app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.218"
-                tools:layout_editor_absoluteX="-60dp" />
+                app:layout_constraintVertical_bias="0.218" />
 
             <TextView
                 android:id="@+id/map3"
                 android:layout_width="match_parent"
                 android:layout_height="77dp"
+                android:layout_marginBottom="752dp"
                 android:text="Venue 2, City Varsity Braamfontein"
                 android:textAlignment="center"
                 android:textColor="#EAE08D"
                 android:textSize="24sp"
                 android:textStyle="bold"
-                tools:layout_editor_absoluteX="16dp"
-                tools:layout_editor_absoluteY="1226dp" />
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent" />
 
             <ImageView
                 android:id="@+id/imageView14"
                 android:layout_width="wrap_content"
                 android:layout_height="300dp"
                 android:layout_gravity="center_horizontal"
-                app:srcCompat="@drawable/map_3"
-                tools:layout_editor_absoluteX="91dp"
-                tools:layout_editor_absoluteY="1720dp" />
+                android:layout_marginBottom="16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.461"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/map_3" />
 
             <TextView
                 android:id="@+id/emailView"
