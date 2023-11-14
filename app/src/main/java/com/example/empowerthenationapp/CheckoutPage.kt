@@ -1,6 +1,5 @@
 package com.example.empowerthenationapp
 
-
 import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -12,19 +11,16 @@ import android.widget.Spinner
 import android.widget.TextView
 import com.example.empowerthenationapp.R
 
-
 class CheckoutPage : AppCompatActivity() {
-//IIE(2023)
-enum class Education {
-    NONE,
-    HIGHSCHOOL,
-    DIPLOMA,
-    BACHELOR,
-    MASTERS,
-    PHD,
-}
+    enum class Education {
+        NONE,
+        HIGHSCHOOL,
+        DIPLOMA,
+        BACHELOR,
+        MASTERS,
+        PHD,
+    }
 
-    //stackoverflow,2023
     private val checkBoxValues = arrayOf(750, 750, 750, 1500, 1500, 1500, 1500)
     private var result = 0
     private var redValue = 0
@@ -34,7 +30,6 @@ enum class Education {
     private var sWValue = 0
     private var lSValue = 0
     private var landSValue = 0
-
 
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -53,12 +48,9 @@ enum class Education {
         val editTextText = findViewById<EditText>(R.id.editTextText)
         val editTextText2 = findViewById<EditText>(R.id.editTextText2)
 
-
-
         val educationSpinner = findViewById<Spinner>(R.id.educationSpinner)
-        educationSpinner.adapter = ArrayAdapter <Education>(  this,
+        educationSpinner.adapter = ArrayAdapter<Education>(this,
             android.R.layout.simple_list_item_1, Education.values())
-
 
         calculateResult.setOnClickListener {
             redValue = if (red.isChecked) checkBoxValues[0] else 0
@@ -69,13 +61,22 @@ enum class Education {
             lSValue = if (lS.isChecked) checkBoxValues[5] else 0
             landSValue = if (landS.isChecked) checkBoxValues[6] else 0
 
-            result = redValue + blueValue + whiteValue + fAValue + sWValue+ lSValue + landSValue
-            textViewDisplay.text = "Total: $$result"
+            val selectedCourses = listOf(redValue, blueValue, whiteValue, fAValue, sWValue, lSValue, landSValue)
+            val totalCourses = selectedCourses.count { it > 0 }
+
+            result = selectedCourses.sum()
+
+            // Apply discount based on the number of selected courses
+            val discountPercentage = when (totalCourses) {
+                2 -> 5
+                3 -> 10
+                else -> if (totalCourses > 3) 15 else 0
+            }
+
+            val discountAmount = (result * discountPercentage) / 100
+            val discountedTotal = result - discountAmount
+
+            textViewDisplay.text = "Total: $$result\nDiscount: $discountPercentage%\nDiscounted Total: $$discountedTotal"
         }
-
-
     }
 }
-//https://stackoverflow.com/questions/63999783/how-to-convert-the-values-of-checkboxes-into-a-sum-of-integers?rq=3 //
-
-//IIE, 2023. Introduction to Mobile Application Development(Module Manual). The Independent Institute of Education: Unpublished.[Accessed 10 November 2023].//
