@@ -4,220 +4,80 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#157581"
+    android:background="#FFFFFF"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
     tools:context=".CheckoutPage">
 
-    <ScrollView
-        android:id="@+id/scrollView2"
+    <FrameLayout
+        android:id="@+id/container"
         android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottomNav"
+        android:background="#97e4e9" />
+    <Spinner
+        android:id="@+id/spinnerLevel"
+        android:layout_width="377dp"
+        android:layout_height="84dp"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/calculateButton"
+        android:layout_width="219dp"
+        android:layout_height="68dp"
+        android:layout_below="@id/spinnerLevel"
+        android:layout_marginTop="91dp"
+        android:text="Calculate"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/totalFeeTextView"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/bottomNav"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="0dp"
-        android:layout_marginTop="0dp"
-        android:layout_marginEnd="0dp"
-        android:layout_marginBottom="14dp"
-        android:background="#97E4E9"
-        android:fillViewport="true"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0">
+        android:layout_below="@id/calculateButton"
+        android:layout_marginTop="16dp"
+        android:text="Total Fee: "
+        android:textSize="34sp"
+        android:textStyle="bold" />
 
-        <FrameLayout
-            android:id="@+id/container"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_above="@id/bottomNav"
-            android:background="#157581">
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="175dp"
+        android:layout_height="64dp"
+        android:layout_below="@id/totalFeeTextView"
+        android:layout_marginTop="69dp"
+        android:text="Submit"
+        android:textSize="24sp"
+        android:textStyle="bold" />
 
-            <CheckBox
-                android:id="@+id/white"
-                android:layout_width="match_parent"
-                android:layout_height="54dp"
-                android:layout_marginTop="330dp"
-                android:buttonTint="#273516"
-                android:text="Child Minding"
-                android:textAlignment="center"
-                android:textColor="#FFEB3B"
-                android:textSize="34sp"
-                android:textStyle="bold" />
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="185dp"
+        android:layout_height="65dp"
+        android:layout_below="@id/submitButton"
+        android:layout_marginTop="61dp"
+        android:text="Back"
+        android:textSize="24sp"
+        android:textStyle="bold" />
 
-            <CheckBox
-                android:id="@+id/blue"
-                android:layout_width="match_parent"
-                android:layout_height="63dp"
-                android:layout_marginTop="380dp"
-                android:buttonTint="#273516"
-                android:text="Cooking"
-                android:textAlignment="center"
-                android:textColor="#FFEB3B"
-                android:textSize="34sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/textView"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="230dp"
-                android:text="Six Week Courses"
-                android:textAlignment="center"
-                android:textSize="34sp"
-                android:textStyle="bold" />
-
-            <CheckBox
-                android:id="@+id/red"
-                android:layout_width="match_parent"
-                android:layout_height="58dp"
-                android:layout_marginTop="440dp"
-                android:buttonTint="#273516"
-                android:text="Garden Maintainance"
-                android:textAlignment="center"
-                android:textColor="#FFEB3B"
-                android:textSize="34sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/textViewMonths"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="530dp"
-                android:text="Six Month Courses"
-                android:textAlignment="center"
-                android:textSize="34sp"
-                android:textStyle="bold" />
-
-
-            <CheckBox
-                android:id="@+id/fA"
-                android:layout_width="match_parent"
-                android:layout_height="58dp"
-                android:layout_marginTop="600dp"
-                android:buttonTint="#273516"
-                android:text="First Aid"
-                android:textAlignment="center"
-                android:textColor="#FFEB3B"
-                android:textSize="34sp"
-                android:textStyle="bold" />
-
-            <CheckBox
-                android:id="@+id/sW"
-                android:layout_width="match_parent"
-                android:layout_height="58dp"
-                android:layout_marginTop="650dp"
-                android:buttonTint="#273516"
-                android:text="Sewing"
-                android:textAlignment="center"
-                android:textColor="#FFEB3B"
-                android:textSize="34sp"
-                android:textStyle="bold" />
-
-            <CheckBox
-                android:id="@+id/lS"
-                android:layout_width="match_parent"
-                android:layout_height="58dp"
-                android:layout_marginTop="700dp"
-                android:buttonTint="#273516"
-                android:text="Sewing"
-                android:textAlignment="center"
-                android:textColor="#FFEB3B"
-                android:textSize="34sp"
-                android:textStyle="bold" />
-
-            <CheckBox
-                android:id="@+id/landS"
-                android:layout_width="match_parent"
-                android:layout_height="58dp"
-                android:layout_marginTop="750dp"
-                android:buttonTint="#273516"
-                android:text="Landscaping"
-                android:textAlignment="center"
-                android:textColor="#FFEB3B"
-                android:textSize="34sp"
-                android:textStyle="bold" />
-
-
-            <Button
-                android:id="@+id/calculateResult"
-                android:layout_width="493dp"
-                android:layout_height="84dp"
-                android:layout_marginTop="830dp"
-                android:text="Calculate Result"
-                android:textSize="24sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/textViewDisplay"
-                android:layout_width="match_parent"
-                android:layout_height="103dp"
-                android:layout_marginTop="950dp"
-                android:textAlignment="center"
-                android:textColor="#000000"
-                android:textSize="24sp"
-                android:textStyle="bold" />
-
-            <EditText
-                android:id="@+id/editTextText"
-                android:layout_width="503dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="1070dp"
-                android:ems="10"
-                android:hint="Your Name"
-                android:inputType="text"
-                android:textAlignment="center"
-                android:textSize="24sp" />
-
-            <EditText
-                android:id="@+id/editTextText2"
-                android:layout_width="500dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="1120dp"
-                android:ems="10"
-                android:hint="Your Surname"
-                android:inputType="text"
-                android:textAlignment="center"
-                android:textSize="24sp" />
-
-            <EditText
-                android:id="@+id/editTextTextEmailAddress"
-                android:layout_width="508dp"
-                android:layout_height="75dp"
-                android:layout_marginTop="1220dp"
-                android:ems="10"
-                android:hint="Your Email"
-                android:inputType="textEmailAddress"
-                android:textAlignment="center"
-                android:textSize="24sp" />
-
-            <Spinner
-                android:id="@+id/educationSpinner"
-                android:layout_width="match_parent"
-                android:layout_height="54dp"
-                android:layout_marginTop="1320dp" />
-
-            <Button
-                android:id="@+id/buttonSubmit"
-                android:layout_width="520dp"
-                android:layout_height="82dp"
-                android:layout_marginTop="1520dp"
-                android:text="Submit"
-                android:textSize="24sp"
-                android:textStyle="bold" />
-
-
-        </FrameLayout>
-    </ScrollView>
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="180dp"
+        android:layout_height="67dp"
+        android:layout_below="@id/backButton"
+        android:layout_marginTop="49dp"
+        android:text="Next"
+        android:textSize="24sp"
+        android:textStyle="bold" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNav"
         android:layout_width="match_parent"
         android:layout_height="74dp"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="13dp"
+        android:layout_marginBottom="17dp"
         android:background="#c2c0bc"
         android:scrollIndicators="left"
         app:itemIconSize="38dp"
