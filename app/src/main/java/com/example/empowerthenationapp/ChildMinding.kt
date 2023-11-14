@@ -1,18 +1,22 @@
 package com.example.empowerthenationapp
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.widget.Button
 import androidx.fragment.app.Fragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class ChildMinding : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_child_minding)
 
         //geeksforgeeks.com,2023
         val bottomNav = findViewById<BottomNavigationView>(R.id.bottomNav)
+
 
         bottomNav.setOnItemSelectedListener {
             when (it.itemId) {
@@ -28,11 +32,6 @@ class ChildMinding : AppCompatActivity() {
 
                 R.id.settings -> {
                     loadFragment(SixMonthCoursesFragment())
-                    true
-                }
-
-                R.id.checkout -> {
-                    loadFragment(CheckoutFragment())
                     true
                 }
 

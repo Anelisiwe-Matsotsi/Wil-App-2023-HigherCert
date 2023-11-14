@@ -7,6 +7,8 @@ import androidx.fragment.app.Fragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class FirstAid : AppCompatActivity() {
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_first_aid)
@@ -31,10 +33,6 @@ class FirstAid : AppCompatActivity() {
                     true
                 }
 
-                R.id.checkout -> {
-                    loadFragment(CheckoutFragment())
-                    true
-                }
 
                 R.id.contactus -> {
                     loadFragment(ContactUsFragment())

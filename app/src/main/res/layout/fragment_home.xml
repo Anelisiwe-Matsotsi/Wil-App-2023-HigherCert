@@ -7,206 +7,83 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-<FrameLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#97e4e9"
-    tools:context=".HomeFragment">
-
-    <!-- TODO: Update blank fragment layout -->
-
-
-    <TextView
-        android:id="@+id/textView"
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="77dp"
-        android:layout_marginTop="200dp"
-        android:background="@color/white"
-        android:text="Home"
-        android:textAlignment="center"
-        android:textColor="#050505"
-        android:textSize="34sp"
-        android:textStyle="bold" />
+        android:layout_height="match_parent"
+        android:background="#157581"
+        tools:context=".HomeFragment">
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="match_parent"
-        android:layout_height="158dp"
-        android:background="@color/white"
-        android:src="@drawable/thumbnail_img_7280" />
-
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="match_parent"
-        android:layout_height="190dp"
-        android:layout_marginTop="300dp"
-        android:src="@drawable/img_7270" />
-
-    <TextView
-        android:id="@+id/textViewSlogan"
-        android:layout_width="match_parent"
-        android:layout_height="238dp"
-        android:layout_marginTop="500dp"
-        android:layout_marginRight="0dp"
-        android:background="@android:color/holo_orange_dark"
-        android:text="Empowering Every Mind"
-        android:textAlignment="viewStart"
-        android:textColor="#050505"
-        android:textSize="30sp"
-        android:textStyle="bold|italic" />
-
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="197dp"
-        android:layout_height="120dp"
-        android:layout_marginTop="600dp"
-        android:layout_marginRight="0dp"
-        android:src="@drawable/img_7275" />
-
-    <ImageView
-        android:id="@+id/imageView7"
-        android:layout_width="197dp"
-        android:layout_height="120dp"
-        android:layout_marginLeft="200dp"
-        android:layout_marginTop="600dp"
-        android:src="@drawable/cookingclass" />
+        <!-- TODO: Update blank fragment layout -->
 
 
-    <TextView
-        android:id="@+id/textViewInfoTitle"
-        android:layout_width="322dp"
-        android:layout_height="62dp"
-        android:layout_marginLeft="46dp"
-        android:layout_marginTop="800dp"
-        android:background="#4CAF50"
-        android:text="ABOUT EMPOWERING THE NATION"
-        android:textAlignment="center"
-        android:textColor="#FFFFFF"
-        android:textSize="24sp"
-        android:textStyle="normal|bold" />
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="400dp"
+            android:background="#157581"
+            android:text="Let Us Empower your mind"
+            android:textAlignment="center"
+            android:textColor="#EAE08D"
+            android:textSize="60sp"
+            android:textStyle="bold" />
 
-    <TextView
-        android:id="@+id/textViewInfo"
-        android:layout_width="370dp"
-        android:layout_height="206dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="880dp"
-        android:background="#4CAF50"
-        android:text="Empowering the nation is a business that was established in 2018 in hopes to empower domeatic workers as           well as gardners all over Johannesburg with skills that can help them improve their wages.People are trained          on both six-month long Learnerships and six-week long Short Skills Training"
-        android:textAlignment="textStart"
-        android:textColor="#FFFFFF"
-        android:textSize="20sp"
-        android:textStyle="normal" />
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="92dp"
+            android:src="@drawable/thumbnail_img_7280" />
 
-    <TextView
-        android:id="@+id/textViewTeam"
-        android:layout_width="match_parent"
-        android:layout_height="1191dp"
-        android:layout_marginTop="1120dp"
-        android:layout_marginRight="0dp"
-        android:background="@android:color/holo_orange_dark"
-        android:text="Meet The Team!"
-        android:textAlignment="center"
-        android:textColor="#050505"
-        android:textSize="30sp"
-        android:textStyle="bold|italic" />
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="match_parent"
+            android:layout_height="380dp"
+            android:layout_marginTop="80dp"
+            android:src="@drawable/img_7270" />
 
-    <ImageView
-        android:id="@+id/imageView8"
-        android:layout_width="220dp"
-        android:layout_height="217dp"
-        android:layout_marginTop="1190dp"
-        android:src="@drawable/natty" />
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="160dp"
+            android:layout_marginTop="650dp"
+            android:background="#15909F"
+            android:text="Empowering the nation is hopes to empower domeatic workers as   "
+            android:textAlignment="center"
+            android:textColor="#F1EDED"
+            android:textSize="34sp" />
 
-    <TextView
-        android:id="@+id/textViewNatty"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="1240dp"
-        android:layout_marginLeft="200dp"
-        android:text="Natasha Afonso - CEO and Founder"
-        android:textColor="#020202"
-        android:textSize="24sp"
-        android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="136dp"
+            android:layout_marginTop="800dp"
+            android:background="#15909F"
+            android:text="Explore the Courses!"
+            android:textAlignment="center"
+            android:textColor="#FFE57F"
+            android:textSize="48sp" />
 
-    <ImageView
-        android:id="@+id/imageView9"
-        android:layout_width="185dp"
-        android:layout_height="222dp"
-        android:layout_marginTop="1400dp"
-        android:src="@drawable/anelisiwe" />
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="88dp"
+            android:layout_marginTop="920dp"
+            android:text="Six Week Courses"
+            android:textColor="#4CAF50"
+            android:textSize="24sp"
+            android:textStyle="bold" />
 
-    <TextView
-        android:id="@+id/textViewAnelisiwe"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="200dp"
-        android:layout_marginTop="1460dp"
-        android:text="Anelisiwe Matsosti- Head of six Week Courses"
-        android:textColor="#020202"
-        android:textSize="24sp"
-        android:textStyle="bold" />
-
-    <ImageView
-        android:id="@+id/imageViewEsihle"
-        android:layout_width="196dp"
-        android:layout_height="155dp"
-        android:layout_marginTop="1650dp"
-        android:src="@drawable/esilhle" />
-
-    <TextView
-        android:id="@+id/textEsihle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="1700dp"
-        android:layout_marginLeft="200dp"
-        android:text="Sipho-Esihle Yose- Fee Director"
-        android:textColor="#020202"
-        android:textSize="24sp"
-        android:textStyle="bold"/>
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="match_parent"
+            android:layout_height="87dp"
+            android:layout_marginTop="1000dp"
+            android:text="Six Month Courses"
+            android:textColor="#4CAF50"
+            android:textSize="24sp"
+            android:textStyle="bold" />
 
 
-    <ImageView
-        android:id="@+id/imageViewShamgar"
-        android:layout_width="196dp"
-        android:layout_height="155dp"
-        android:layout_marginTop="1850dp"
-        android:src="@drawable/shamgar_dogg" />
-
-
-    <TextView
-        android:id="@+id/textShamgar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="200dp"
-        android:layout_marginTop="1900dp"
-        android:text="Shamgar Vambe- Director Of Location"
-        android:textColor="#020202"
-        android:textSize="24sp"
-        android:textStyle="bold" />
-
-
-
-    <ImageView
-        android:id="@+id/imageViewSiya"
-        android:layout_width="196dp"
-        android:layout_height="155dp"
-        android:layout_marginTop="2050dp"
-        android:src="@drawable/siyakholwa" />
-
-
-    <TextView
-        android:id="@+id/textSiya"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="200dp"
-        android:layout_marginTop="2090dp"
-        android:text="Siyakholwa Bonga- Head of Six Month Courses"
-        android:textColor="#020202"
-        android:textSize="24sp"
-        android:textStyle="bold" />
-
-
-</FrameLayout>
+    </FrameLayout>
 
 </ScrollView>

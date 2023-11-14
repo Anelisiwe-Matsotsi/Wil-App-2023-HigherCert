@@ -7,6 +7,7 @@ import androidx.fragment.app.Fragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class Sewing : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sewing)
@@ -31,10 +32,7 @@ class Sewing : AppCompatActivity() {
                     true
                 }
 
-                R.id.checkout -> {
-                    loadFragment(CheckoutFragment())
-                    true
-                }
+
 
                 R.id.contactus -> {
                     loadFragment(ContactUsFragment())

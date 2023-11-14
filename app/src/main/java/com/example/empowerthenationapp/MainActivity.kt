@@ -37,10 +37,6 @@ class MainActivity : AppCompatActivity() {
                     true
                 }
 
-                R.id.checkout -> {
-                    loadFragment(CheckoutFragment())
-                    true
-                }
 
                 R.id.contactus -> {
                     loadFragment(ContactUsFragment())
