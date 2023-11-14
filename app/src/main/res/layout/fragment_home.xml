@@ -46,8 +46,8 @@
 
             <TextView
                 android:id="@+id/textView"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_width="510dp"
+                android:layout_height="209dp"
                 android:background="#157581"
                 android:text="Let Us Empower your mind"
                 android:textAlignment="center"
@@ -56,20 +56,22 @@
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.4"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.307" />
+                app:layout_constraintVertical_bias="0.288" />
 
             <ImageView
                 android:id="@+id/imageView4"
-                android:layout_width="451dp"
-                android:layout_height="313dp"
+                android:layout_width="485dp"
+                android:layout_height="409dp"
                 android:src="@drawable/img_7270"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.433"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.661" />
+                app:layout_constraintVertical_bias="0.686" />
 
             <TextView
                 android:id="@+id/textView4"
@@ -87,13 +89,13 @@
 
             <TextView
                 android:id="@+id/textView6"
-                android:layout_width="416dp"
-                android:layout_height="178dp"
+                android:layout_width="423dp"
+                android:layout_height="97dp"
                 android:background="#15909F"
                 android:text="Score Discounts By Getting Two Or More Coureses! "
                 android:textAlignment="center"
                 android:textColor="#FFE57F"
-                android:textSize="48sp"
+                android:textSize="34sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
