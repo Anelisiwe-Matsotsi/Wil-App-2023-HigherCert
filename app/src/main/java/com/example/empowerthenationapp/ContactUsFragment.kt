@@ -1,10 +1,13 @@
 package com.example.empowerthenationapp
 
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -34,7 +37,25 @@ class ContactUsFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_contact_us, container, false)
+        val view = inflater.inflate(R.layout.fragment_contact_us, container, false)
+
+        val facebookIcon: ImageView = view.findViewById(R.id.facebookIcon)
+        val twitterIcon: ImageView = view.findViewById(R.id.twitterIcon)
+        val instaIcon: ImageView = view.findViewById(R.id.instaIcon)
+        facebookIcon.setOnClickListener {
+
+            startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("https://m.Facebook.com")))
+        }
+        twitterIcon.setOnClickListener {
+
+            startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("https://m.Facebook.com")))
+        }
+        instaIcon.setOnClickListener {
+
+            startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("https://m.Facebook.com")))
+        }
+
+    return view
     }
 
     companion object {

@@ -10,84 +10,352 @@
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#157581"
-        tools:context=".SixMonthCoursesFragment">
+        android:background="#157581">
 
-
-        <Button
-            android:id="@+id/button"
-            android:layout_width="303dp"
-            android:layout_height="101dp"
-            android:layout_marginLeft="70dp"
-            android:layout_marginTop="1150dp"
-            android:background="@drawable/img_7273"
-            android:text="Life Skills"
-            android:textColor="#090909"
-            android:textSize="24sp" />
-
-        <Button
-            android:id="@+id/button7"
-            android:layout_width="303dp"
-            android:layout_height="101dp"
-            android:layout_marginLeft="70dp"
-            android:layout_marginTop="1000dp"
-            android:background="@drawable/img_7274"
-            android:text="Landscaping"
-            android:textColor="#090909"
-            android:textSize="24sp" />
-
-        <Button
-            android:id="@+id/button8"
-            android:layout_width="306dp"
-            android:layout_height="101dp"
-            android:layout_marginLeft="70dp"
-            android:layout_marginTop="700dp"
-            android:background="@drawable/img_7279"
-            android:text="First Aid"
-            android:textColor="#090909"
-            android:textSize="24sp" />
-
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="335dp"
-            android:layout_height="139dp"
-            android:layout_marginLeft="60dp"
-            android:layout_marginTop="400dp"
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="1420dp"
             android:background="#157581"
-            android:text="Six Month Courses"
-            android:textColor="#EAE08D"
-            android:textSize="48sp"
-            android:textStyle="bold" />
-
-        <Button
-            android:id="@+id/button9"
-            android:layout_width="303dp"
-            android:layout_height="101dp"
-            android:layout_marginLeft="70dp"
-            android:layout_marginTop="850dp"
-            android:background="@drawable/img_7272"
-            android:text="Sewing"
-            android:textColor="#090909"
-            android:textSize="24sp" />
+            tools:context=".SixMonthCoursesFragment">
 
 
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="match_parent"
-            android:layout_height="176dp"
-            app:srcCompat="@drawable/thumbnail_img_7280" />
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="352dp"
+                android:layout_height="113dp"
+                android:background="#157581"
+                android:text="Six Month Courses"
+                android:textColor="#F4F4F4"
+                android:textSize="48sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.217" />
 
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="match_parent"
-            android:layout_height="74dp"
-            android:layout_marginTop="550dp"
-            android:background="#f3d89d"
-            android:text="These are the six month courses, enter any to find out more."
-            android:textAlignment="center"
-            android:textColor="#0E0E0E"
-            android:textSize="24sp" />
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="420dp"
+                android:layout_height="222dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/thumbnail_img_7280" />
 
 
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView"
+                android:layout_width="333dp"
+                android:layout_height="157dp"
+                app:cardCornerRadius="15dp"
+                app:cardPreventCornerOverlap="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.636"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.792">
+
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/grasient_drawable"
+                    android:minHeight="100dp"
+                    android:padding="10dp"
+                    app:layout_constraintEnd_toEndOf="@+id/cardView"
+                    app:layout_constraintStart_toStartOf="@+id/cardView"
+                    app:layout_constraintTop_toTopOf="@+id/cardView">
+
+                    <TextView
+                        android:id="@+id/textViewSub1Title"
+                        android:layout_width="270dp"
+                        android:layout_height="70dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="107dp"
+                        android:text="Life Skills"
+                        android:textColor="#F6F4F4"
+                        android:textSize="34sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="168dp"
+                        android:layout_height="83dp"
+                        android:layout_below="@id/textViewSub1Title"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginTop="-7dp"
+                        android:layout_marginEnd="151dp"
+                        android:layout_marginBottom="0dp"
+                        android:text="Study nature, love nature,\nclose to nature"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp" />
+
+                    <Button
+                        android:id="@+id/button"
+                        android:layout_width="112dp"
+                        android:layout_height="104dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="210dp"
+                        android:layout_marginTop="28dp"
+                        android:layout_marginEnd="1dp"
+                        android:layout_marginBottom="15dp"
+                        android:background="@drawable/img_7273"
+                        android:textColor="#090909"
+                        android:textSize="24sp" />
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView2"
+                android:layout_width="333dp"
+                android:layout_height="157dp"
+                app:cardCornerRadius="15dp"
+                app:cardPreventCornerOverlap="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.627"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.607">
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/grasient_drawable"
+                    android:minHeight="100dp"
+                    android:padding="10dp"
+                    app:layout_constraintEnd_toEndOf="@+id/cardView2"
+                    app:layout_constraintStart_toStartOf="@+id/cardView2"
+                    app:layout_constraintTop_toTopOf="@+id/cardView">
+
+                    <TextView
+                        android:id="@+id/textViewSub1Title2"
+                        android:layout_width="246dp"
+                        android:layout_height="64dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="145dp"
+                        android:text="Sewing"
+                        android:textColor="#F6F4F4"
+                        android:textSize="34sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="99dp"
+                        android:layout_below="@id/textViewSub1Title2"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginEnd="160dp"
+                        android:layout_marginBottom="0dp"
+                        android:text="Study nature, love nature,\nclose to nature"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp" />
+
+                    <Button
+                        android:id="@+id/button9"
+                        android:layout_width="106dp"
+                        android:layout_height="104dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="33dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/img_7272"
+                        android:textColor="#090909"
+                        android:textSize="24sp" />
+
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView3"
+                android:layout_width="333dp"
+                android:layout_height="157dp"
+                app:cardCornerRadius="15dp"
+                app:cardPreventCornerOverlap="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.62"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.411">
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/grasient_drawable"
+                    android:minHeight="100dp"
+                    android:padding="10dp"
+                    app:layout_constraintEnd_toEndOf="@+id/cardView3"
+                    app:layout_constraintStart_toStartOf="@+id/cardView3"
+                    app:layout_constraintTop_toTopOf="@+id/cardView3">
+
+                    <TextView
+                        android:id="@+id/textViewSub1Title3"
+                        android:layout_width="249dp"
+                        android:layout_height="68dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="138dp"
+                        android:text="First Aid"
+                        android:textColor="#F6F4F4"
+                        android:textSize="34sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="156dp"
+                        android:layout_height="86dp"
+                        android:layout_below="@id/textViewSub1Title3"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="13dp"
+                        android:layout_marginTop="-17dp"
+                        android:layout_marginEnd="154dp"
+                        android:layout_marginBottom="0dp"
+                        android:text="Study nature, love nature,\nclose to nature"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp" />
+
+                    <Button
+                        android:id="@+id/button8"
+                        android:layout_width="112dp"
+                        android:layout_height="93dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="206dp"
+                        android:layout_marginTop="41dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginBottom="13dp"
+                        android:background="@drawable/img_7279"
+                        android:textColor="#090909"
+                        android:textSize="24sp" />
+
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView4"
+                android:layout_width="333dp"
+                android:layout_height="157dp"
+                app:cardCornerRadius="15dp"
+                app:cardPreventCornerOverlap="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.655"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.97">
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/grasient_drawable"
+                    android:minHeight="100dp"
+                    android:padding="10dp"
+                    app:layout_constraintEnd_toEndOf="@+id/cardView4"
+                    app:layout_constraintStart_toStartOf="@+id/cardView4"
+                    app:layout_constraintTop_toTopOf="@+id/cardView">
+
+                    <TextView
+                        android:id="@+id/textViewSub1Title4"
+                        android:layout_width="229dp"
+                        android:layout_height="60dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="89dp"
+                        android:text="Landscaping"
+                        android:textColor="#F6F4F4"
+                        android:textSize="34sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="211dp"
+                        android:layout_height="91dp"
+                        android:layout_below="@id/textViewSub1Title4"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginTop="-6dp"
+                        android:layout_marginEnd="108dp"
+                        android:layout_marginBottom="0dp"
+                        android:text="Study nature, love nature,\nclose to nature"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp" />
+
+                    <Button
+                        android:id="@+id/button7"
+                        android:layout_width="104dp"
+                        android:layout_height="79dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="219dp"
+                        android:layout_marginTop="44dp"
+                        android:layout_marginEnd="0dp"
+                        android:layout_marginBottom="24dp"
+                        android:background="@drawable/img_7274"
+                        android:textColor="#090909"
+                        android:textSize="24sp" />
+
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="382dp"
+                android:layout_height="82dp"
+                android:text="Six months of education, help us empower you with our selction of useful courses "
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.555"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.315" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
     </FrameLayout>
 </ScrollView>
