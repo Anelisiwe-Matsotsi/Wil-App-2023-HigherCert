@@ -14,10 +14,26 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="1420dp"
+            android:layout_height="1490dp"
             android:background="#157581"
             tools:context=".SixMonthCoursesFragment">
 
+
+            <Button
+                android:id="@+id/buttonBookNowCourses"
+                android:layout_width="219dp"
+                android:layout_height="98dp"
+                android:background="@drawable/grasient_drawable"
+                android:drawableRight="@drawable/ic_checkout_foreground"
+                android:text="Book Now!"
+                android:textColor="#4CAF50"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.502"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.959" />
 
             <TextView
                 android:id="@+id/textView"
@@ -53,10 +69,10 @@
                 app:cardPreventCornerOverlap="true"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.636"
+                app:layout_constraintHorizontal_bias="0.617"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.792">
+                app:layout_constraintVertical_bias="0.709">
 
 
                 <RelativeLayout
@@ -127,10 +143,10 @@
                 app:cardPreventCornerOverlap="true"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.627"
+                app:layout_constraintHorizontal_bias="0.651"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.607">
+                app:layout_constraintVertical_bias="0.568">
 
                 <RelativeLayout
                     android:id="@+id/relativeLayout2"
@@ -191,6 +207,7 @@
 
             </androidx.cardview.widget.CardView>
 
+
             <androidx.cardview.widget.CardView
                 android:id="@+id/cardView3"
                 android:layout_width="333dp"
@@ -199,10 +216,10 @@
                 app:cardPreventCornerOverlap="true"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.62"
+                app:layout_constraintHorizontal_bias="0.617"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.411">
+                app:layout_constraintVertical_bias="0.423">
 
                 <RelativeLayout
                     android:id="@+id/relativeLayout3"
@@ -267,7 +284,6 @@
 
             </androidx.cardview.widget.CardView>
 
-
             <androidx.cardview.widget.CardView
                 android:id="@+id/cardView4"
                 android:layout_width="333dp"
@@ -276,10 +292,10 @@
                 app:cardPreventCornerOverlap="true"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.655"
+                app:layout_constraintHorizontal_bias="0.617"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.97">
+                app:layout_constraintVertical_bias="0.854">
 
                 <RelativeLayout
                     android:id="@+id/relativeLayout4"

@@ -18,6 +18,21 @@
             tools:context=".SixWeekCoursesFragment">
 
 
+            <Button
+                android:id="@+id/buttonBookNowCourses"
+                android:layout_width="234dp"
+                android:layout_height="92dp"
+                android:background="@drawable/grasient_drawable"
+                android:drawableRight="@drawable/ic_checkout_foreground"
+                android:text="Book Now!"
+                android:textColor="#4CAF50"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.876" />
+
             <TextView
                 android:id="@+id/textViewWeeks"
                 android:layout_width="352dp"
@@ -52,10 +67,10 @@
                 app:cardPreventCornerOverlap="true"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.636"
+                app:layout_constraintHorizontal_bias="0.623"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.792">
+                app:layout_constraintVertical_bias="0.768">
 
 
                 <RelativeLayout
@@ -172,13 +187,13 @@
 
                     <Button
                         android:id="@+id/button4"
-                        android:layout_width="106dp"
-                        android:layout_height="104dp"
+                        android:layout_width="107dp"
+                        android:layout_height="71dp"
                         android:layout_alignParentTop="true"
                         android:layout_alignParentEnd="true"
                         android:layout_alignParentBottom="true"
-                        android:layout_marginTop="33dp"
-                        android:layout_marginEnd="10dp"
+                        android:layout_marginTop="66dp"
+                        android:layout_marginEnd="0dp"
                         android:layout_marginBottom="10dp"
                         android:background="@drawable/child_minding_1"
                         android:textColor="#090909"
@@ -190,6 +205,7 @@
 
             </androidx.cardview.widget.CardView>
 
+
             <androidx.cardview.widget.CardView
                 android:id="@+id/cardView6"
                 android:layout_width="333dp"
@@ -198,10 +214,10 @@
                 app:cardPreventCornerOverlap="true"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.62"
+                app:layout_constraintHorizontal_bias="0.633"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.411">
+                app:layout_constraintVertical_bias="0.457">
 
                 <RelativeLayout
                     android:id="@+id/relativeLayout6"
@@ -265,7 +281,6 @@
 
 
             </androidx.cardview.widget.CardView>
-
 
             <TextView
                 android:id="@+id/textView7"

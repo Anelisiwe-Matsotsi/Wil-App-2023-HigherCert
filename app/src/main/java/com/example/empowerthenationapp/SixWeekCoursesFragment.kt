@@ -42,6 +42,7 @@ class SixWeekCoursesFragment : Fragment() {
         val button4 = view.findViewById<Button>(R.id.button4)
         val button3 = view.findViewById<Button>(R.id.button3)
         val button5 = view.findViewById<Button>(R.id.button5)
+        val buttonBookNowCourses = view.findViewById<Button>(R.id.buttonBookNowCourses)
 
 
         button4.setOnClickListener {
@@ -65,6 +66,12 @@ class SixWeekCoursesFragment : Fragment() {
             startActivity(intent)
         }
 
+        buttonBookNowCourses.setOnClickListener {
+
+            val intent = Intent(context, CheckoutPage::class.java)
+
+            startActivity(intent)
+        }
 
 
 
