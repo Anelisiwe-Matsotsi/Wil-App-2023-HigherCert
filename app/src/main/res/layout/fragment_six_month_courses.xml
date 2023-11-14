@@ -21,8 +21,8 @@
 
             <TextView
                 android:id="@+id/textView"
-                android:layout_width="413dp"
-                android:layout_height="122dp"
+                android:layout_width="352dp"
+                android:layout_height="113dp"
                 android:background="#157581"
                 android:text="Six Month Courses"
                 android:textColor="#F4F4F4"
@@ -30,15 +30,15 @@
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.683"
+                app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.244" />
+                app:layout_constraintVertical_bias="0.217" />
 
             <ImageView
                 android:id="@+id/imageView"
-                android:layout_width="427dp"
-                android:layout_height="125dp"
+                android:layout_width="420dp"
+                android:layout_height="222dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
@@ -111,7 +111,6 @@
                         android:layout_marginEnd="1dp"
                         android:layout_marginBottom="15dp"
                         android:background="@drawable/img_7273"
-                        android:text="Life Skills"
                         android:textColor="#090909"
                         android:textSize="24sp" />
 
@@ -183,7 +182,6 @@
                         android:layout_marginEnd="10dp"
                         android:layout_marginBottom="10dp"
                         android:background="@drawable/img_7272"
-                        android:text="Sewing"
                         android:textColor="#090909"
                         android:textSize="24sp" />
 
@@ -260,7 +258,6 @@
                         android:layout_marginEnd="5dp"
                         android:layout_marginBottom="13dp"
                         android:background="@drawable/img_7279"
-                        android:text="First Aid"
                         android:textColor="#090909"
                         android:textSize="24sp" />
 
@@ -336,7 +333,6 @@
                         android:layout_marginEnd="0dp"
                         android:layout_marginBottom="24dp"
                         android:background="@drawable/img_7274"
-                        android:text="Landscaping"
                         android:textColor="#090909"
                         android:textSize="24sp" />
 
