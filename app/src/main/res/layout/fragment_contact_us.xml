@@ -41,7 +41,7 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginTop="290dp"
-            android:background="@android:color/holo_orange_dark"
+            android:background="#157581"
             android:text="EMPOWERING THE NATION"
             android:textAlignment="center"
             android:textColor="#050505"
