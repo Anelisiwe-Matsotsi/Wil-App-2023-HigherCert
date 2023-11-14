@@ -1,16 +1,30 @@
 package com.example.empowerthenationapp
 
 
+import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.ArrayAdapter
 import android.widget.Button
 import android.widget.CheckBox
+import android.widget.EditText
+import android.widget.Spinner
 import android.widget.TextView
 import com.example.empowerthenationapp.R
 
 
 class CheckoutPage : AppCompatActivity() {
+//IIE(2023)
+enum class Education {
+    NONE,
+    HIGHSCHOOL,
+    DIPLOMA,
+    BACHELOR,
+    MASTERS,
+    PHD,
+}
 
+    //stackoverflow,2023
     private val checkBoxValues = arrayOf(750, 750, 750, 1500, 1500, 1500, 1500)
     private var result = 0
     private var redValue = 0
@@ -21,6 +35,8 @@ class CheckoutPage : AppCompatActivity() {
     private var lSValue = 0
     private var landSValue = 0
 
+
+    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_checkout_page)
@@ -34,6 +50,15 @@ class CheckoutPage : AppCompatActivity() {
         val landS = findViewById<CheckBox>(R.id.landS)
         val calculateResult = findViewById<Button>(R.id.calculateResult)
         val textViewDisplay = findViewById<TextView>(R.id.textViewDisplay)
+        val editTextText = findViewById<EditText>(R.id.editTextText)
+        val editTextText2 = findViewById<EditText>(R.id.editTextText2)
+
+
+
+        val educationSpinner = findViewById<Spinner>(R.id.educationSpinner)
+        educationSpinner.adapter = ArrayAdapter <Education>(  this,
+            android.R.layout.simple_list_item_1, Education.values())
+
 
         calculateResult.setOnClickListener {
             redValue = if (red.isChecked) checkBoxValues[0] else 0
@@ -47,6 +72,8 @@ class CheckoutPage : AppCompatActivity() {
             result = redValue + blueValue + whiteValue + fAValue + sWValue+ lSValue + landSValue
             textViewDisplay.text = "Total: $$result"
         }
+
+
     }
 }
 //https://stackoverflow.com/questions/63999783/how-to-convert-the-values-of-checkboxes-into-a-sum-of-integers?rq=3 //
