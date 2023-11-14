@@ -77,6 +77,62 @@
                 android:textSize="24sp"
                 android:textStyle="bold" />
 
+            <TextView
+                android:id="@+id/textViewMonths"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="530dp"
+                android:text="Six Month Courses"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+
+
+            <CheckBox
+                android:id="@+id/fA"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:layout_marginTop="600dp"
+                android:buttonTint="#273516"
+                android:text="First Aid"
+                android:textColor="#FFEB3B"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/sW"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:layout_marginTop="650dp"
+                android:buttonTint="#273516"
+                android:text="Sewing"
+                android:textColor="#FFEB3B"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/lS"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:layout_marginTop="700dp"
+                android:buttonTint="#273516"
+                android:text="Sewing"
+                android:textColor="#FFEB3B"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/landS"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:layout_marginTop="750dp"
+                android:buttonTint="#273516"
+                android:text="Landscaping"
+                android:textColor="#FFEB3B"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+
+
             <Button
                 android:id="@+id/calculateResult"
                 android:layout_width="423dp"
@@ -85,6 +141,8 @@
                 android:text="Calculate Result"
                 android:textSize="24sp"
                 android:textStyle="bold" />
+
+
 
             <TextView
                 android:id="@+id/textViewDisplay"
