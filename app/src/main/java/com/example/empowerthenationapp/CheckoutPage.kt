@@ -1,7 +1,9 @@
 package com.example.empowerthenationapp
 
 import android.annotation.SuppressLint
-import androidx.appcompat.app.AppCompatActivity
+import android.content.ActivityNotFoundException
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.widget.ArrayAdapter
 import android.widget.Button
@@ -9,6 +11,8 @@ import android.widget.CheckBox
 import android.widget.EditText
 import android.widget.Spinner
 import android.widget.TextView
+import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import com.example.empowerthenationapp.R
 
 class CheckoutPage : AppCompatActivity() {
@@ -44,6 +48,7 @@ class CheckoutPage : AppCompatActivity() {
         val lS = findViewById<CheckBox>(R.id.lS)
         val landS = findViewById<CheckBox>(R.id.landS)
         val calculateResult = findViewById<Button>(R.id.calculateResult)
+        val submitButton = findViewById<Button>(R.id.buttonSubmit)
         val textViewDisplay = findViewById<TextView>(R.id.textViewDisplay)
         val editTextText = findViewById<EditText>(R.id.editTextText)
         val editTextText2 = findViewById<EditText>(R.id.editTextText2)
@@ -78,5 +83,19 @@ class CheckoutPage : AppCompatActivity() {
 
             textViewDisplay.text = "Total: $$result\nDiscount: $discountPercentage%\nDiscounted Total: $$discountedTotal"
         }
+
+        submitButton.setOnClickListener {
+            val emailIntent = Intent(Intent.ACTION_SENDTO)
+            emailIntent.data = Uri.parse("mailto:")  // only email apps should handle this
+            emailIntent.putExtra(Intent.EXTRA_SUBJECT, "Checkout Details")
+
+            try {
+                startActivity(Intent.createChooser(emailIntent, "Send email..."))
+            } catch (e: ActivityNotFoundException) {
+                // Handle case where no email app is available
+                Toast.makeText(this, "No email app found", Toast.LENGTH_SHORT).show()
+            }
+        }
     }
 }
+
