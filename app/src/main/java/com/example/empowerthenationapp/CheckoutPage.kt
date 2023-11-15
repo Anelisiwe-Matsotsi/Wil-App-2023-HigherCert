@@ -59,10 +59,11 @@ class CheckoutPage : AppCompatActivity() {
 
         val educationSpinner = findViewById<Spinner>(R.id.educationSpinner)
 
-
+//IIE(2023)
         educationSpinner.adapter =
             ArrayAdapter<Education>(this, android.R.layout.simple_list_item_1, Education.values())
 
+        //stackoverflow.com,2023
         calculateResult.setOnClickListener {
             redValue = if (red.isChecked) checkBoxValues[0] else 0
             blueValue = if (blue.isChecked) checkBoxValues[1] else 0
@@ -91,7 +92,7 @@ class CheckoutPage : AppCompatActivity() {
             textViewDisplay.text =
                 "Total: R$result\nDiscount: $discountPercentage%\nDiscounted Total: R$discountedTotal"
         }
-
+        //geeksforgeeks.com,2023
         buttonSubmit.setOnClickListener {
                 val emailIntent = Intent(Intent.ACTION_SENDTO)
                 emailIntent.data = Uri.parse("mailto:natty.yo24@gmail.com")  // only email apps should handle this
@@ -146,6 +147,10 @@ class CheckoutPage : AppCompatActivity() {
 
 }
 
-//Geeks for Geeks. 2022. [Online] Available at:https://geeksforgeeks.org/courses/data-structures-and-algorithms-in-javascript. [Accessed 10 November 2023].
-//https://stackoverflow.com/questions/63999783/how-to-convert-the-values-of-checkboxes-into-a-sum-of-integers?rq=3 //
+
+
+//geeksforgeeks.com,2023[Online] Available at:https://www.geeksforgeeks.org/bottom-navigation-bar-in-android/  Accessed on[26/10/2023]
+//geeksforgeeks.com,2023 [Online] Available at:https://www.geeksforgeeks.org/bottom-navigation-bar-in-android-using-kotlin/ Accessed on[26/10/2023]
+//Geeks for Geeks. 2023. [Online] Available at:https://geeksforgeeks.org/courses/data-structures-and-algorithms-in-javascript. [Accessed 10 November 2023].
+//stackoverflow.2023.[Online] Available at: https://stackoverflow.com/questions/63999783/how-to-convert-the-values-of-checkboxes-into-a-sum-of-integers?rq=3 //
 //IIE, 2023. Introduction to Mobile Application Development(Module Manual). The Independent Institute of Education: Unpublished.[Accessed 10 November 2023].//
