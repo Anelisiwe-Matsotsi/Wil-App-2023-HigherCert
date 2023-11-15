@@ -164,6 +164,7 @@
                 android:layout_height="300dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginEnd="36dp"
+                android:layout_marginBottom="476dp"
                 android:src="@drawable/map_2"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -273,8 +274,5 @@
                     android:src="@drawable/insta" />
             </LinearLayout>
         </androidx.constraintlayout.widget.ConstraintLayout>
-                android:layout_marginStart="80dp"
-                android:src="@drawable/insta" />
-        </LinearLayout>
     </FrameLayout>
 </ScrollView>
