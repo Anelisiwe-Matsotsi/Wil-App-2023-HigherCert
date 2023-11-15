@@ -1,77 +1,210 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/scrollView2"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#97E4E9"
-    android:fillViewport="true"
-    app:layout_constraintBottom_toBottomOf="parent"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintHorizontal_bias="0.0"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toTopOf="parent"
-    app:layout_constraintVertical_bias="1.0">
-    <RelativeLayout
+    android:background="#157581"
+    tools:context=".Landscaping">
+
+
+    <ScrollView
+        android:id="@+id/scrollView2"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="#FFFFFF"
-        tools:context=".FirstAid">
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottomNav"
+        android:layout_marginBottom="5dp"
+        android:background="#97E4E9"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
 
         <FrameLayout
             android:id="@+id/container"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#97e4e9">
+            android:background="#157581">
 
-
-            <TextView
-                android:id="@+id/textViewHeadingFA"
-                android:layout_width="match_parent"
-                android:layout_height="77dp"
-                android:layout_marginTop="200dp"
-                android:background="@color/white"
-                android:text="First Aid"
-                android:textAlignment="center"
-                android:textColor="#050505"
-                android:textSize="34sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/textViewDisplay"
-                android:layout_width="345dp"
-                android:layout_height="548dp"
-                android:layout_marginLeft="36dp"
-                android:layout_marginTop="300dp"
-                android:text=" First-Aid training is for people required to analyse emergency situations and providing life support and basic first to             stabilise patients prior to their arrival  During this basic First-Aid course, you learn the important basic First-aid skills,including basic life             support and the use of an AED. You learn  how to bring a person to safety, how to access their condition and alert emergency             services. In this course you learn how to administer First-Aid to someone who is unresponsive, bleeding,choking or              suffocating,has a burn,cut,graze,bruise,sprain,bone fracture or poisoning.              However, the certificate for this course is valid for 2 years but may be extended by doing what is called a refresher course.             The entrance requirements would be being able to read and write and be able to comprehend English, Mathematics literacy(level6),             Mathematics(level4) and grade 12 NSC certificate. The duration if this course is 6 months. The total cost is R1500 inclusive of all             the equipment that will be needed for the training, also including lunch. The Assessment includes workbook completion, practical demonstration             of First-Aid skills. However, if a certain student is not yet competant then they shall only receive an attendance certificate and not the              actual qualification."
-                android:textColor="#070707" />
 
             <ImageView
-                android:id="@+id/imageView5"
+                android:id="@+id/imageViewL3"
                 android:layout_width="match_parent"
-                android:layout_height="169dp"
-                android:background="@color/white"
+                android:layout_height="199dp"
+                android:layout_gravity="top"
+                android:background="#FFFFFF"
+                android:contentDescription="TODO"
                 app:srcCompat="@drawable/thumbnail_img_7280" />
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="1420dp"
+                android:background="#157581"
+                tools:context=".Sewing">
+
+
+                <TextView
+                    android:id="@+id/textViewWeeks"
+                    android:layout_width="352dp"
+                    android:layout_height="113dp"
+                    android:background="#157581"
+                    android:text="First Aid"
+                    android:textColor="#F4F4F4"
+                    android:textSize="48sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.217" />
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="420dp"
+                    android:layout_height="222dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/thumbnail_img_7280" />
+
+
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView7"
+                    android:layout_width="333dp"
+                    android:layout_height="165dp"
+                    app:cardCornerRadius="15dp"
+                    app:cardPreventCornerOverlap="true"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.627"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.607">
+
+                    <RelativeLayout
+                        android:id="@+id/relativeLayout7"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/grasient_drawable"
+                        android:minHeight="100dp"
+                        android:padding="10dp"
+                        app:layout_constraintEnd_toEndOf="@+id/cardView2"
+                        app:layout_constraintStart_toStartOf="@+id/cardView2"
+                        app:layout_constraintTop_toTopOf="@+id/cardView">
+
+                        <TextView
+                            android:id="@+id/textViewSub1Title7"
+                            android:layout_width="266dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="52dp"
+                            android:text="Head Instructor"
+                            android:textColor="#F6F4F4"
+                            android:textSize="34sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="150dp"
+                            android:layout_height="99dp"
+                            android:layout_below="@id/textViewSub1Title7"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="0dp"
+                            android:layout_marginEnd="160dp"
+                            android:layout_marginBottom="0dp"
+                            android:text="Karen \nPyon"
+                            android:textColor="#FFFFFF"
+                            android:textSize="28sp" />
+
+                        <Button
+                            android:id="@+id/button4"
+                            android:layout_width="118dp"
+                            android:layout_height="105dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginTop="50dp"
+                            android:layout_marginEnd="30dp"
+                            android:layout_marginBottom="0dp"
+                            android:background="@drawable/first"
+                            android:textColor="#090909"
+                            android:textSize="24sp" />
+
+
+                    </RelativeLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="361dp"
+                    android:layout_height="319dp"
+                    android:text="Learn how to administer First-Aid to someone who is unresponsive, bleeding,choking or suffocating,has a burn,cut,graze,bruise,sprain,bone fracture or poisoning.\n Fees: \n R1500."
+                    android:textSize="28sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.489"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.364" />
+                <Button
+                    android:id="@+id/buttonBookNow4"
+                    android:layout_width="219dp"
+                    android:layout_height="98dp"
+                    android:background="@drawable/grasient_drawable"
+                    android:drawableRight="@drawable/ic_checkout_foreground"
+                    android:text="Book Now!"
+                    android:textColor="#4CAF50"
+                    android:textSize="24sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.982" />
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="320dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toTopOf="@+id/buttonBookNow4"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cardView7"
+                    app:srcCompat="@drawable/firstaid2"
+                    tools:ignore="MissingConstraints" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
 
         </FrameLayout>
+    </ScrollView>
 
-
-        <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/bottomNav"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_alignParentBottom="true"
-            android:layout_marginBottom="20dp"
-            android:background="#FF9800"
-            android:scrollIndicators="left"
-            app:itemTextColor="#0C0B0B"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="parent"
-            app:menu="@menu/nav_menu" />
-    </RelativeLayout>
-
-</ScrollView>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNav"
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="17dp"
+        android:background="#c2c0bc"
+        android:scrollIndicators="left"
+        app:itemIconSize="38dp"
+        app:itemIconTint="@color/black"
+        app:itemTextColor="#0C0B0B"
+        app:labelVisibilityMode="labeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/nav_menu" />
+</RelativeLayout>
