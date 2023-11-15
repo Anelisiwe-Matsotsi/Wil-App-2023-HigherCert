@@ -14,8 +14,12 @@ class GardenMaintenance : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_garden_maintenance)
-val buttonCheck=findViewById<Button>(R.id.buttonCheck)
+        val buttonCheck =findViewById<Button>(R.id.buttonCheck)
         buttonCheck.setOnClickListener {
+            val intent = Intent(this,CheckoutPage ::class.java)
+
+            startActivity(intent)
+        }
 
             val intent = Intent(this, CheckoutPage::class.java)
 

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#157581"
-    tools:context=".GardenMaintenance">
+    tools:context=".ChildMinding">
 
 
     <ScrollView
@@ -43,7 +43,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="1420dp"
                 android:background="#157581"
-                tools:context=".GardenMaintenance">
+                tools:context=".ChildMinding">
 
 
                 <TextView
@@ -184,6 +184,18 @@
                     app:layout_constraintTop_toBottomOf="@+id/cardView7"
                     app:srcCompat="@drawable/gardenmaintenance"
                     tools:ignore="MissingConstraints" />
+                <Button
+                    android:id="@+id/buttonCheck"
+                    android:layout_width="166dp"
+                    android:layout_height="90dp"
+                    android:layout_marginTop="148dp"
+                    android:background="#832196F3"
+                    android:text="Book now!"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.498"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cardView7" />
 
 
             </androidx.constraintlayout.widget.ConstraintLayout>
