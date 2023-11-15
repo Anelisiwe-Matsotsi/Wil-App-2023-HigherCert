@@ -4,6 +4,7 @@ import android.annotation.SuppressLint
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
+import android.util.Log
 import android.widget.ArrayAdapter
 import android.widget.Button
 import android.widget.CheckBox
@@ -11,6 +12,8 @@ import android.widget.EditText
 import android.widget.Spinner
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.fragment.app.Fragment
+import com.google.android.material.bottomnavigation.BottomNavigationView
 
 
 class CheckoutPage : AppCompatActivity() {
@@ -51,7 +54,12 @@ class CheckoutPage : AppCompatActivity() {
         val editTextText = findViewById<EditText>(R.id.editTextText)
         val editTextText2 = findViewById<EditText>(R.id.editTextText2)
 
+        //geeksforgeeks.com,2023
+        val bottomNav = findViewById<BottomNavigationView>(R.id.bottomNav)
+
         val educationSpinner = findViewById<Spinner>(R.id.educationSpinner)
+
+
         educationSpinner.adapter =
             ArrayAdapter<Education>(this, android.R.layout.simple_list_item_1, Education.values())
 
@@ -81,7 +89,7 @@ class CheckoutPage : AppCompatActivity() {
             val discountedTotal = result - discountAmount
 
             textViewDisplay.text =
-                "Total: $$result\nDiscount: $discountPercentage%\nDiscounted Total: $$discountedTotal"
+                "Total: R$result\nDiscount: $discountPercentage%\nDiscounted Total: R$discountedTotal"
         }
 
         buttonSubmit.setOnClickListener {
@@ -92,14 +100,51 @@ class CheckoutPage : AppCompatActivity() {
                 val discountedTotal = ""
                 emailIntent.putExtra(
                     Intent.EXTRA_TEXT,
-                    "Total: $$result\nDiscount: $discountPercentage%\nDiscounted Total: $$discountedTotal"
+                    "Total: R$result\nDiscount: $discountPercentage%\nDiscounted Total: R$discountedTotal"
                 )
 
                 startActivity(emailIntent)
             }
+
+
+        bottomNav.setOnItemSelectedListener {
+            when (it.itemId) {
+                R.id.home -> {
+                    loadFragment(HomeFragment())
+                    true
+                }
+
+                R.id.message -> {
+                    loadFragment(SixWeekCoursesFragment())
+                    true
+                }
+
+                R.id.settings -> {
+                    loadFragment(SixMonthCoursesFragment())
+                    true
+                }
+
+                R.id.contactus -> {
+                    loadFragment(ContactUsFragment())
+                    true
+                }
+
+                else -> {
+                    Log.e("MainActivity", "Invalid menu item selected: ${it.itemId}")
+                    false
+                }
+            }
+
         }
+
+    }
+    private  fun loadFragment(fragment: Fragment){
+        val transaction = supportFragmentManager.beginTransaction()
+        transaction.replace(R.id.container,fragment)
+        transaction.commit()
     }
 
+}
 
 //Geeks for Geeks. 2022. [Online] Available at:https://geeksforgeeks.org/courses/data-structures-and-algorithms-in-javascript. [Accessed 10 November 2023].
 //https://stackoverflow.com/questions/63999783/how-to-convert-the-values-of-checkboxes-into-a-sum-of-integers?rq=3 //

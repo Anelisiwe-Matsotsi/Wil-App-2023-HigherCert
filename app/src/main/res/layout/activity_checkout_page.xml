@@ -152,8 +152,8 @@
 
             <Button
                 android:id="@+id/calculateResult"
-                android:layout_width="match_parent"
-                android:layout_height="84dp"
+                android:layout_width="446dp"
+                android:layout_height="91dp"
                 android:layout_marginTop="830dp"
                 android:background="@drawable/grasient_drawable"
                 android:text="Calculate Result"
@@ -211,8 +211,8 @@
 
             <Button
                 android:id="@+id/buttonSubmit"
-                android:layout_width="520dp"
-                android:layout_height="82dp"
+                android:layout_width="421dp"
+                android:layout_height="97dp"
                 android:layout_marginTop="1520dp"
                 android:background="@drawable/grasient_drawable"
                 android:text="Submit"
