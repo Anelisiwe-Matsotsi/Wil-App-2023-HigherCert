@@ -11,7 +11,7 @@ import android.widget.EditText
 import android.widget.Spinner
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import com.example.empowerthenationapp.R
+
 
 class CheckoutPage : AppCompatActivity() {
     enum class Education {
@@ -33,7 +33,7 @@ class CheckoutPage : AppCompatActivity() {
     private var lSValue = 0
     private var landSValue = 0
 
-    @SuppressLint("MissingInflatedId")
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_checkout_page)
@@ -46,7 +46,7 @@ class CheckoutPage : AppCompatActivity() {
         val lS = findViewById<CheckBox>(R.id.lS)
         val landS = findViewById<CheckBox>(R.id.landS)
         val calculateResult = findViewById<Button>(R.id.calculateResult)
-        val submitButton = findViewById<Button>(R.id.submitButton)
+        val buttonSubmit = findViewById<Button>(R.id.buttonSubmit)
         val textViewDisplay = findViewById<TextView>(R.id.textViewDisplay)
         val editTextText = findViewById<EditText>(R.id.editTextText)
         val editTextText2 = findViewById<EditText>(R.id.editTextText2)
@@ -64,7 +64,8 @@ class CheckoutPage : AppCompatActivity() {
             lSValue = if (lS.isChecked) checkBoxValues[5] else 0
             landSValue = if (landS.isChecked) checkBoxValues[6] else 0
 
-            val selectedCourses = listOf(redValue, blueValue, whiteValue, fAValue, sWValue, lSValue, landSValue)
+            val selectedCourses =
+                listOf(redValue, blueValue, whiteValue, fAValue, sWValue, lSValue, landSValue)
             val totalCourses = selectedCourses.count { it > 0 }
 
             result = selectedCourses.sum()
@@ -79,24 +80,26 @@ class CheckoutPage : AppCompatActivity() {
             val discountAmount = (result * discountPercentage) / 100
             val discountedTotal = result - discountAmount
 
-            textViewDisplay.text = "Total: $$result\nDiscount: $discountPercentage%\nDiscounted Total: $$discountedTotal"
+            textViewDisplay.text =
+                "Total: $$result\nDiscount: $discountPercentage%\nDiscounted Total: $$discountedTotal"
         }
 
-        submitButton.setOnClickListener {
-            val emailIntent = Intent(Intent.ACTION_SENDTO)
-            emailIntent.data = Uri.parse("mailto:")  // only email apps should handle this
-            var putExtra = emailIntent.putExtra(Intent.EXTRA_SUBJECT, "Checkout Details")
-            val discountPercentage = ""
-            val discountedTotal = ""
-            emailIntent.putExtra(
-                Intent.EXTRA_TEXT,
-                "Total: $$result\nDiscount: $discountPercentage%\nDiscounted Total: $$discountedTotal"
-            )
+        buttonSubmit.setOnClickListener {
+                val emailIntent = Intent(Intent.ACTION_SENDTO)
+                emailIntent.data = Uri.parse("mailto:")  // only email apps should handle this
+                emailIntent.putExtra(Intent.EXTRA_SUBJECT, "Checkout Details")
+                val discountPercentage = ""
+                val discountedTotal = ""
+                emailIntent.putExtra(
+                    Intent.EXTRA_TEXT,
+                    "Total: $$result\nDiscount: $discountPercentage%\nDiscounted Total: $$discountedTotal"
+                )
 
-            startActivity(emailIntent)
+                startActivity(emailIntent)
+            }
         }
     }
-}
+
 
 //Geeks for Geeks. 2022. [Online] Available at:https://geeksforgeeks.org/courses/data-structures-and-algorithms-in-javascript. [Accessed 10 November 2023].
 //https://stackoverflow.com/questions/63999783/how-to-convert-the-values-of-checkboxes-into-a-sum-of-integers?rq=3 //
