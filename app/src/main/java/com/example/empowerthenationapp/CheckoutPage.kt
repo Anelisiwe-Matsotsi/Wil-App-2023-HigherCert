@@ -86,7 +86,7 @@ class CheckoutPage : AppCompatActivity() {
 
         buttonSubmit.setOnClickListener {
                 val emailIntent = Intent(Intent.ACTION_SENDTO)
-                emailIntent.data = Uri.parse("mailto:")  // only email apps should handle this
+                emailIntent.data = Uri.parse("mailto:natty.yo24@gmail.com")  // only email apps should handle this
                 emailIntent.putExtra(Intent.EXTRA_SUBJECT, "Checkout Details")
                 val discountPercentage = ""
                 val discountedTotal = ""

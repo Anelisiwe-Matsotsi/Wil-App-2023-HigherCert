@@ -1,10 +1,8 @@
 package com.example.empowerthenationapp
 
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import android.widget.Button
 import androidx.fragment.app.Fragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
@@ -14,17 +12,7 @@ class GardenMaintenance : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_garden_maintenance)
-        val buttonCheck =findViewById<Button>(R.id.buttonCheck)
-        buttonCheck.setOnClickListener {
-            val intent = Intent(this,CheckoutPage ::class.java)
 
-            startActivity(intent)
-        }
-
-            val intent = Intent(this, CheckoutPage::class.java)
-
-            startActivity(intent)
-        }
         //geeksforgeeks.com,2023
         val bottomNav = findViewById<BottomNavigationView>(R.id.bottomNav)
 
@@ -68,6 +56,7 @@ class GardenMaintenance : AppCompatActivity() {
     }
 
 }
+
 //Refrences
 //geeksforgeeks.com,2023[Online] Available at:https://www.geeksforgeeks.org/bottom-navigation-bar-in-android/  Accessed on[26/10/2023]
 //geeksforgeeks.com,2023 [Online] Available at:https://www.geeksforgeeks.org/bottom-navigation-bar-in-android-using-kotlin/ Accessed on[26/10/2023]
