@@ -35,6 +35,15 @@
             android:layout_above="@id/bottomNav"
             android:background="#157581">
 
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="222dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/thumbnail_img_7280" />
+
             <CheckBox
                 android:id="@+id/white"
                 android:layout_width="match_parent"
@@ -43,7 +52,7 @@
                 android:buttonTint="#273516"
                 android:text="Child Minding"
                 android:textAlignment="center"
-                android:textColor="#FFEB3B"
+                android:textColor="#EAE08D"
                 android:textSize="34sp"
                 android:textStyle="bold" />
 
@@ -55,14 +64,14 @@
                 android:buttonTint="#273516"
                 android:text="Cooking"
                 android:textAlignment="center"
-                android:textColor="#FFEB3B"
+                android:textColor="#EAE08D"
                 android:textSize="34sp"
                 android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/textView"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="106dp"
                 android:layout_marginTop="230dp"
                 android:text="Six Week Courses"
                 android:textAlignment="center"
@@ -77,7 +86,7 @@
                 android:buttonTint="#273516"
                 android:text="Garden Maintainance"
                 android:textAlignment="center"
-                android:textColor="#FFEB3B"
+                android:textColor="#EAE08D"
                 android:textSize="34sp"
                 android:textStyle="bold" />
 
@@ -100,7 +109,7 @@
                 android:buttonTint="#273516"
                 android:text="First Aid"
                 android:textAlignment="center"
-                android:textColor="#FFEB3B"
+                android:textColor="#EAE08D"
                 android:textSize="34sp"
                 android:textStyle="bold" />
 
@@ -112,7 +121,7 @@
                 android:buttonTint="#273516"
                 android:text="Sewing"
                 android:textAlignment="center"
-                android:textColor="#FFEB3B"
+                android:textColor="#EAE08D"
                 android:textSize="34sp"
                 android:textStyle="bold" />
 
@@ -124,7 +133,7 @@
                 android:buttonTint="#273516"
                 android:text="Sewing"
                 android:textAlignment="center"
-                android:textColor="#FFEB3B"
+                android:textColor="#EAE08D"
                 android:textSize="34sp"
                 android:textStyle="bold" />
 
@@ -136,16 +145,17 @@
                 android:buttonTint="#273516"
                 android:text="Landscaping"
                 android:textAlignment="center"
-                android:textColor="#FFEB3B"
+                android:textColor="#EAE08D"
                 android:textSize="34sp"
                 android:textStyle="bold" />
 
 
             <Button
                 android:id="@+id/calculateResult"
-                android:layout_width="493dp"
+                android:layout_width="match_parent"
                 android:layout_height="84dp"
                 android:layout_marginTop="830dp"
+                android:background="@drawable/grasient_drawable"
                 android:text="Calculate Result"
                 android:textSize="24sp"
                 android:textStyle="bold" />
@@ -204,6 +214,7 @@
                 android:layout_width="520dp"
                 android:layout_height="82dp"
                 android:layout_marginTop="1520dp"
+                android:background="@drawable/grasient_drawable"
                 android:text="Submit"
                 android:textSize="24sp"
                 android:textStyle="bold" />
