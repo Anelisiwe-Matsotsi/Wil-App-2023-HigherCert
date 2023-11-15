@@ -1,8 +1,5 @@
 package com.example.empowerthenationapp
 
-import android.annotation.SuppressLint
-import android.content.Intent
-import android.net.Uri
 import android.os.Bundle
 import android.util.Log
 import android.widget.ArrayAdapter
@@ -48,7 +45,7 @@ class CheckoutPage : AppCompatActivity() {
         val sW = findViewById<CheckBox>(R.id.sW)
         val lS = findViewById<CheckBox>(R.id.lS)
         val landS = findViewById<CheckBox>(R.id.landS)
-        val calculateResult = findViewById<Button>(R.id.calculateResult)
+        val calculateResult4 = findViewById<Button>(R.id.calculateResult4)
         val buttonSubmit = findViewById<Button>(R.id.buttonSubmit)
         val textViewDisplay = findViewById<TextView>(R.id.textViewDisplay)
         val editTextText = findViewById<EditText>(R.id.editTextText)
@@ -64,7 +61,7 @@ class CheckoutPage : AppCompatActivity() {
             ArrayAdapter<Education>(this, android.R.layout.simple_list_item_1, Education.values())
 
         //stackoverflow.com,2023
-        calculateResult.setOnClickListener {
+        calculateResult4.setOnClickListener {
             redValue = if (red.isChecked) checkBoxValues[0] else 0
             blueValue = if (blue.isChecked) checkBoxValues[1] else 0
             whiteValue = if (white.isChecked) checkBoxValues[2] else 0

@@ -36,8 +36,8 @@
             android:background="#157581">
 
             <ImageView
-                android:id="@+id/imageView2"
-                android:layout_width="match_parent"
+                android:id="@+id/imageView5"
+                android:layout_width="420dp"
                 android:layout_height="222dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -52,7 +52,7 @@
                 android:buttonTint="#273516"
                 android:text="Child Minding"
                 android:textAlignment="center"
-                android:textColor="#EAE08D"
+                android:textColor="#FFEB3B"
                 android:textSize="34sp"
                 android:textStyle="bold" />
 
@@ -64,14 +64,14 @@
                 android:buttonTint="#273516"
                 android:text="Cooking"
                 android:textAlignment="center"
-                android:textColor="#EAE08D"
+                android:textColor="#FFEB3B"
                 android:textSize="34sp"
                 android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/textView"
                 android:layout_width="match_parent"
-                android:layout_height="106dp"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="230dp"
                 android:text="Six Week Courses"
                 android:textAlignment="center"
@@ -86,7 +86,7 @@
                 android:buttonTint="#273516"
                 android:text="Garden Maintainance"
                 android:textAlignment="center"
-                android:textColor="#EAE08D"
+                android:textColor="#FFEB3B"
                 android:textSize="34sp"
                 android:textStyle="bold" />
 
@@ -109,7 +109,7 @@
                 android:buttonTint="#273516"
                 android:text="First Aid"
                 android:textAlignment="center"
-                android:textColor="#EAE08D"
+                android:textColor="#FFEB3B"
                 android:textSize="34sp"
                 android:textStyle="bold" />
 
@@ -121,7 +121,7 @@
                 android:buttonTint="#273516"
                 android:text="Sewing"
                 android:textAlignment="center"
-                android:textColor="#EAE08D"
+                android:textColor="#FFEB3B"
                 android:textSize="34sp"
                 android:textStyle="bold" />
 
@@ -133,7 +133,7 @@
                 android:buttonTint="#273516"
                 android:text="Sewing"
                 android:textAlignment="center"
-                android:textColor="#EAE08D"
+                android:textColor="#FFEB3B"
                 android:textSize="34sp"
                 android:textStyle="bold" />
 
@@ -145,17 +145,16 @@
                 android:buttonTint="#273516"
                 android:text="Landscaping"
                 android:textAlignment="center"
-                android:textColor="#EAE08D"
+                android:textColor="#FFEB3B"
                 android:textSize="34sp"
                 android:textStyle="bold" />
 
 
             <Button
-                android:id="@+id/calculateResult"
-                android:layout_width="446dp"
-                android:layout_height="91dp"
+                android:id="@+id/calculateResult4"
+                android:layout_width="357dp"
+                android:layout_height="98dp"
                 android:layout_marginTop="830dp"
-                android:background="@drawable/grasient_drawable"
                 android:text="Calculate Result"
                 android:textSize="24sp"
                 android:textStyle="bold" />
@@ -194,8 +193,8 @@
 
             <EditText
                 android:id="@+id/editTextTextEmailAddress"
-                android:layout_width="508dp"
-                android:layout_height="75dp"
+                android:layout_width="339dp"
+                android:layout_height="72dp"
                 android:layout_marginTop="1220dp"
                 android:ems="10"
                 android:hint="Your Email"
@@ -211,10 +210,9 @@
 
             <Button
                 android:id="@+id/buttonSubmit"
-                android:layout_width="421dp"
+                android:layout_width="282dp"
                 android:layout_height="97dp"
                 android:layout_marginTop="1520dp"
-                android:background="@drawable/grasient_drawable"
                 android:text="Submit"
                 android:textSize="24sp"
                 android:textStyle="bold" />
