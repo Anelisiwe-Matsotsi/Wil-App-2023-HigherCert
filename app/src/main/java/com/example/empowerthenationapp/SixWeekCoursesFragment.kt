@@ -101,4 +101,6 @@ class SixWeekCoursesFragment : Fragment() {
     }
 }
 //References
-//tutorialspoint.com,2023 [Online] Available at: https://www.tutorialspoint.com/how-to-implement-bottom-navigation-with-activities-in-android
+//tutorialspoint.com,2023 [Online] Available at: https://www.tutorialspoint.com/how-to-implement-bottom-navigation-with-activities-in-android  Accessed on[26/10/2023]
+//studytonight.com,2023 [Online] Available at: https://www.studytonight.com/post/gradient-drawable-in-android-create-gradient-backgrounds#:~:text=To%20create%20a%20gradient%20color,Resource%20File%20and%20create%20gradient_drawable. Accessed on[12/11/2023]
+//appsnipp.com,2023 [Online] Available at:  https://appsnipp.com/free-multipurpose-home-design-with-dark-mode-for-android/     Accessed on[12/11/2023]

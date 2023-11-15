@@ -38,6 +38,7 @@ class SixMonthCoursesFragment : Fragment() {
        // tutorialspoint.com,2023
         // Inflate the layout for this fragment
         //studytonight.com,2023
+        //appsnipp.com,2023
         val view = inflater.inflate(R.layout.fragment_six_month_courses, container, false)
 
         val button8 = view.findViewById<Button>(R.id.button8)
@@ -111,6 +112,6 @@ class SixMonthCoursesFragment : Fragment() {
     }
 }
 //References
-//tutorialspoint.com,2023 [Online] Available at: https://www.tutorialspoint.com/how-to-implement-bottom-navigation-with-activities-in-android
-//studytonight.com,2023 [Online] Available at: https://www.studytonight.com/post/gradient-drawable-in-android-create-gradient-backgrounds#:~:text=To%20create%20a%20gradient%20color,Resource%20File%20and%20create%20gradient_drawable.
-//appsnipp.com,2023 [Online] Available at:  https://appsnipp.com/free-multipurpose-home-design-with-dark-mode-for-android/
+//tutorialspoint.com,2023 [Online] Available at: https://www.tutorialspoint.com/how-to-implement-bottom-navigation-with-activities-in-android  Accessed on[26/10/2023]
+//studytonight.com,2023 [Online] Available at: https://www.studytonight.com/post/gradient-drawable-in-android-create-gradient-backgrounds#:~:text=To%20create%20a%20gradient%20color,Resource%20File%20and%20create%20gradient_drawable. Accessed on[12/11/2023]
+//appsnipp.com,2023 [Online] Available at:  https://appsnipp.com/free-multipurpose-home-design-with-dark-mode-for-android/     Accessed on[12/11/2023]
