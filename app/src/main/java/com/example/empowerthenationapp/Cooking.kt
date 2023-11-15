@@ -22,13 +22,6 @@ class Cooking : AppCompatActivity() {
 
 
 
-        val buttonNowCheck=findViewById<Button>(R.id.buttonNowCheck)
-        buttonNowCheck.setOnClickListener {
-
-            val intent = Intent(this, CheckoutPage::class.java)
-
-            startActivity(intent)
-        }
 
         bottomNav.setOnItemSelectedListener {
             when (it.itemId) {

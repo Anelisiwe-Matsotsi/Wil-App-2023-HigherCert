@@ -59,6 +59,62 @@
                 android:textStyle="italic"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/mapview"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="330dp"
+            android:autoLink="phone"
+            android:background="@android:color/holo_orange_dark"
+            android:padding="16dp"
+            android:text="Phone: +27 748873445"
+            android:textAlignment="center"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/map3"
+            android:layout_width="match_parent"
+            android:layout_height="77dp"
+            android:layout_marginTop="1450dp"
+            android:text="Venue 2, City Varsity Braamfontein"
+            android:textAlignment="center"
+            android:textColor="#EAE08D"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+        <ImageView
+            android:id="@+id/imageView14"
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:layout_marginTop="1500dp"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/map_3" />
+        <TextView
+            android:id="@+id/emailView"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="410dp"
+            android:autoLink="email"
+            android:background="@android:color/holo_blue_dark"
+            android:padding="16dp"
+            android:text="info@empoweringthenation.com"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp" /> <TextView
+        android:id="@+id/w"
+        android:layout_width="match_parent"
+        android:layout_height="77dp"
+        android:layout_marginTop="480dp"
+        android:text="Follow Us On:"
+        android:textAlignment="center"
+        android:textColor="#EAE08D"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="550dp"
+            android:orientation="horizontal">
 
             <TextView
                 android:id="@+id/map1"
@@ -84,6 +140,10 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent" />
+                android:id="@+id/facebookIcon"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/zbf" />
 
             <TextView
                 android:id="@+id/map2"
@@ -140,6 +200,8 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent" />
+                android:layout_marginStart="100dp"
+                android:src="@drawable/twt" />
 
             <ImageView
                 android:id="@+id/imageView14"
@@ -212,5 +274,8 @@
                     android:src="@drawable/insta" />
             </LinearLayout>
         </androidx.constraintlayout.widget.ConstraintLayout>
+                android:layout_marginStart="80dp"
+                android:src="@drawable/insta" />
+        </LinearLayout>
     </FrameLayout>
 </ScrollView>
