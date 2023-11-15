@@ -1,7 +1,8 @@
 package com.example.empowerthenationapp
 
 import android.annotation.SuppressLint
-import androidx.appcompat.app.AppCompatActivity
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.widget.ArrayAdapter
 import android.widget.Button
@@ -9,6 +10,7 @@ import android.widget.CheckBox
 import android.widget.EditText
 import android.widget.Spinner
 import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
 import com.example.empowerthenationapp.R
 
 class CheckoutPage : AppCompatActivity() {
@@ -44,13 +46,14 @@ class CheckoutPage : AppCompatActivity() {
         val lS = findViewById<CheckBox>(R.id.lS)
         val landS = findViewById<CheckBox>(R.id.landS)
         val calculateResult = findViewById<Button>(R.id.calculateResult)
+        val submitButton = findViewById<Button>(R.id.submitButton)
         val textViewDisplay = findViewById<TextView>(R.id.textViewDisplay)
         val editTextText = findViewById<EditText>(R.id.editTextText)
         val editTextText2 = findViewById<EditText>(R.id.editTextText2)
 
         val educationSpinner = findViewById<Spinner>(R.id.educationSpinner)
-        educationSpinner.adapter = ArrayAdapter<Education>(this,
-            android.R.layout.simple_list_item_1, Education.values())
+        educationSpinner.adapter =
+            ArrayAdapter<Education>(this, android.R.layout.simple_list_item_1, Education.values())
 
         calculateResult.setOnClickListener {
             redValue = if (red.isChecked) checkBoxValues[0] else 0
@@ -78,5 +81,23 @@ class CheckoutPage : AppCompatActivity() {
 
             textViewDisplay.text = "Total: $$result\nDiscount: $discountPercentage%\nDiscounted Total: $$discountedTotal"
         }
+
+        submitButton.setOnClickListener {
+            val emailIntent = Intent(Intent.ACTION_SENDTO)
+            emailIntent.data = Uri.parse("mailto:")  // only email apps should handle this
+            var putExtra = emailIntent.putExtra(Intent.EXTRA_SUBJECT, "Checkout Details")
+            val discountPercentage = ""
+            val discountedTotal = ""
+            emailIntent.putExtra(
+                Intent.EXTRA_TEXT,
+                "Total: $$result\nDiscount: $discountPercentage%\nDiscounted Total: $$discountedTotal"
+            )
+
+            startActivity(emailIntent)
+        }
     }
 }
+
+//Geeks for Geeks. 2022. [Online] Available at:https://geeksforgeeks.org/courses/data-structures-and-algorithms-in-javascript. [Accessed 10 November 2023].
+//https://stackoverflow.com/questions/63999783/how-to-convert-the-values-of-checkboxes-into-a-sum-of-integers?rq=3 //
+//IIE, 2023. Introduction to Mobile Application Development(Module Manual). The Independent Institute of Education: Unpublished.[Accessed 10 November 2023].//
